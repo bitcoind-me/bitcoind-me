@@ -1,4 +1,4 @@
-<div style="direction:rtl;text-align:right;">
+<div dir="rtl">
 <p>
 این ریپوی وب‌سایت <a href="https://bitcoind.me">bitcoind.me</a> است.
 </p>
