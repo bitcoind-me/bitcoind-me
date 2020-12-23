@@ -78,6 +78,23 @@
       text-decoration: none;
     }
 
+    .row_downloadLink_dark > a:link{
+      color: #272838;
+      text-decoration: none;
+    }
+    .row_downloadLink_dark > a:hover{
+      color: #272838;
+      text-decoration: none;
+    }
+    .row_downloadLink_dark > a:active{
+      color: #272838;
+      text-decoration: none;
+    }    
+    .row_downloadLink_dark > a:visited{
+      color: #272838;
+      text-decoration: none;
+    }
+
     .row_itemDesc > a:link{
       color:#6aaff9;
       text-decoration: none;
@@ -133,6 +150,13 @@
       border-bottom:solid 1px #45464a;
       padding-bottom: 7px;
     }
+
+    .row_itemTitle_ziya{
+      color:rgb(44, 22, 22);
+      text-align: right;
+      font-family: IranSans;
+      font-size:1em;
+    }    
   </style>
   <!-- Matomo -->
   <script type="text/javascript">
@@ -141,7 +165,7 @@
     _paq.push(['trackPageView']);
     _paq.push(['enableLinkTracking']);
     (function() {
-      var u="https://stats.bitcoind.me/";
+      // var u="https://stats.bitcoind.me/";
       _paq.push(['setTrackerUrl', u+'matomo.php']);
       _paq.push(['setSiteId', '1']);
       var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
@@ -334,7 +358,21 @@
     <div class="container mt-5">
       <p class="section_header container-fluid">ویدیوهای آموزشی</p>
     </div>
-    <div class="container mb-5" style="width: 75%;">
+    <div class="container row_itemTitle_ziya alert alert-secondary" role="alert" style="width: 73%;">
+      <div class="row">
+        <div class="col-8 row_downloadLink_dark pt-2" style="font-weight: bold;font-size: 1.2em;">
+          <a href="ziya_sadr.html">
+            <img src="assets/images/video-avatar.png" style="height:35px;">
+            بیت‌کوین با ضیاء 
+            <span style="font-size:.7em;">(آموزش تصویری بیت‌کوین و ابزارهای آن)</span>
+          </a>
+        </div>
+        <div class="col-4 text-left row_downloadLink_dark" style="font-size: .9em;">
+          <a href="ziya_sadr.html"><img src="assets/images/ziya_avatar.png" style="height:55px;"></a>
+        </div>      
+      </div>
+    </div>
+    <div class="container mb-5 pt-2" style="width: 75%;">
       <div class="container"> 
         <div class="row pb-1" style="border-bottom:solid 1px #b7b8c7;">
           <div class="col-4 row_itemDesc">عنوان</div>

@@ -91,6 +91,31 @@
       text-decoration: none;
     }
 
+    .row_downloadLink_dark > a:link{
+      font-family: IranSans;
+      font-size: .9em;
+      color: #272838;
+      text-decoration: none;
+    }
+    .row_downloadLink_dark > a:hover{
+      font-family: IranSans;
+      font-size: .9em;
+      color: #272838;
+      text-decoration: none;
+    }
+    .row_downloadLink_dark > a:active{
+      font-family: IranSans;
+      font-size: .9em;
+      color: #272838;
+      text-decoration: none;
+    }    
+    .row_downloadLink_dark > a:visited{
+      font-family: IranSans;
+      font-size: .9em;
+      color: #272838;
+      text-decoration: none;
+    }    
+
     .row_itemDesc>a:link {
       color: #6aaff9;
       text-decoration: none;
@@ -119,6 +144,13 @@
 
     .section_header {
       color: #F3DE8A;
+      text-align: right;
+      font-family: IranSans-bold;
+      font-size: 1.2em;
+    }
+
+    .section_header_light {
+      color: #272838;
       text-align: right;
       font-family: IranSans-bold;
       font-size: 1.2em;
@@ -153,6 +185,22 @@
       border-bottom: solid 1px #45464a;
       padding-bottom: 7px;
     }
+
+    .row_abstract_light {
+      font-family: IranSans;
+      font-size: .9em;
+      text-align: justify;
+      color: #666;
+      border-bottom: solid 1px #45464a;
+      padding-bottom: 7px;
+    }    
+    
+    .row_itemTitle_ziya{
+      color:rgb(44, 22, 22);
+      text-align: right;
+      font-family: IranSans;
+      font-size:1em;
+    }      
   </style>
   <!-- Matomo -->
   <script type="text/javascript">
@@ -177,34 +225,68 @@
     </p>
   </div>
   <div class="pt-5 pb-5" style="background-color:#e1dfdf;color:#272838;">
-    <p class="container text-right ir_title_bold" style="font-size:1.3em;width: 65%;">
-      اگر از مطالب این سایت استفاده می‌کنید می‌توانید برای بهتر شدن آن از راه‌های زیر به ما کمک کنید:
-    </p>
-    <br />
-    <p class="container ir_title" style="direction: rtl;text-align: justify;width: 65%;">
-      ۱. این سایت را به دوستان و آشنایان خود معرفی کنید<br />
-      ۲. اگر به کار ترجمه علاقه دارید و در آن وارد هستید، یک کتاب یا مقاله نظری یا عملی درباره بیت‌کوین و مسائل مربوط به
-      آن ترجمه کنید و روی این سایت منتشر کنید<br />
-      ۳. اگر می‌خواهید ترجمه کتاب، مقاله، یا متن پادکست مورد علاقه شما به فارسی ترجمه شود و برای استفاده همگان بر روی
-      سایت قرار گیرد می‌توانید هزینه این کار را متقبل شوید<br />
-      ۴. اگر تصمیم دارید به ما کمک مالی کنید ما بیت‌کوین قبول می‌کنیم و مورد مصرف آن را بصورت دوره‌ای و در قالب گزارشی
-      عمومی منتشر خواهیم کرد. برای مشاهده آدرس روی دکمه زیر کلیک کنید.
-      <br />
-      <br />
-      برای ارتباط 
-      در توئیتر به  <a href="https://twitter.com/@bitcoind_me" target="_blank">bitcoind_me@</a> پیام خصوصی دهید،
-      یا با ایمیل
-      <span class="email_style">bitcoind_me(-at-)protonmail.com</span> با ما در تماس باشید.
-    </p>
-    <p>
-    <div id="donateQr" class="text-center" style="display:none;">
-      <div id="qrcodeCanvas" class="mt-5 mb-3"></div>
-      <div id="qrcodeAddress" class="my-2"></div>
+
+    <div class="container pb-2">
+      <p class="section_header_light container-fluid">ویدیوهای کانال آموزشی ضیاء صدر</p>
     </div>
-    <div id="donateButton" class="mt-5 mb-3 text-center">
-      <img onclick="showDonationAddress()" src="assets/images/donate.png" style="height: 30px;cursor: pointer;">
+    <div class="container mb-5" style="width: 75%;">
+      <div class="container"> 
+        <div class="row pb-1" style="border-bottom:solid 1px #45464a;">
+          <div class="col row_itemDesc">عنوان</div>
+        </div> 
+        <div class="row py-2">
+          <div class="col-lg-10 row_itemTitle_ziya">
+            روش تولید Seed بیت‌کوین با استفاده از کاغذ و تاس
+          </div>
+          <div class="col-lg-2 row_downloadLink_dark">
+            <a href="blobs/tuts/gen_bip39_bitcoin_seed_farsi.pdf">لینک به ویدیو</a>
+          </div>
+        </div>
+        <div class="row pb-2">
+          <div class="col row_abstract_light">
+            در این مصاحبه که در سال ۲۰۱۵ انجام شده است، اریک وسکوئل درباره پروژه Libbitcoin و اهمیت متنوع بودن فضای توسعه نرم‌افزاری بیت‌کوین مطالبی ارائه می‌کند. اریک در خلال مصاحبه به سوالات مهمی درباره «هدف بیت‌کوین» و «مهم‌ترین ویژگی» آن پاسخ می‌دهد. حامی ترجمه این پادکست سایت bitcoind.me است.
+          </div>
+        </div>
+
+        <div class="row py-2">
+          <div class="col-lg-10 row_itemTitle_ziya">
+            معرفی Seed بیت‌کوین و نحوه استفاده و نگهداری از آن در کیف‌پول الکترام
+          </div>
+          <div class="col-lg-2 row_downloadLink_dark">
+            <a href="blobs/tuts/bitcoin_seed_privatekey_wallet.pdf">لینک به ویدیو</a>
+          </div>
+        </div>
+        <div class="row pb-2">
+          <div class="col row_abstract_light">
+            در این مصاحبه که در سال ۲۰۱۵ انجام شده است، اریک وسکوئل درباره پروژه Libbitcoin و اهمیت متنوع بودن فضای توسعه نرم‌افزاری بیت‌کوین مطالبی ارائه می‌کند. اریک در خلال مصاحبه به سوالات مهمی درباره «هدف بیت‌کوین» و «مهم‌ترین ویژگی» آن پاسخ می‌دهد. حامی ترجمه این پادکست سایت bitcoind.me است.
+          </div>
+        </div>        
+
+        <div class="row py-2"‌>
+          <div class="col-lg-10 row_itemTitle_ziya">
+            مقدمه‌ای بر حریم خصوصی بیت‌کوین و سؤال و جواب درباره ویرل‌پولِ سامورایی
+          </div>
+          <div class="col-lg-2 row_downloadLink_dark">
+            <a href="blobs/tuts/bitcoin-privacy-and-whirlpool-qna-farsi.pdf">لینک به ویدیو</a>
+          </div>
+        </div>
+        <div class="row pb-2">
+          <div class="col row_abstract_light">
+            در این مصاحبه که در سال ۲۰۱۵ انجام شده است، اریک وسکوئل درباره پروژه Libbitcoin و اهمیت متنوع بودن فضای توسعه نرم‌افزاری بیت‌کوین مطالبی ارائه می‌کند. اریک در خلال مصاحبه به سوالات مهمی درباره «هدف بیت‌کوین» و «مهم‌ترین ویژگی» آن پاسخ می‌دهد. حامی ترجمه این پادکست سایت bitcoind.me است.
+          </div>
+        </div>        
+
+      </div>
     </div>
-    </p>
+
+    <div class="container my-5" style="width: 75%;">
+      <div class="row">
+        <div class="col">
+          برای لینک یوتوب
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <script type="text/javascript">
