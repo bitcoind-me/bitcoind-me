@@ -1,206 +1,159 @@
 <!DOCTYPE html>
 <html lang="fa">
-
 <head>
-  <title>bitcoind.me | بیت‌کوین فارسی</title>
+  <title>bitcoind.me | بیت‌کوین با ضیاء</title>
+  <meta http-equiv="onion-location" content="http://bitcoin6djvpbydmvqhdarbdb2oaicnp6pbu2kwpcfwpcy2h4vurvjad.onion" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="معرفی کتاب‌ها، مقالات، خودآموزها و به‌طور کلی معرفی منابع آموزشی معتبر حوزه بیت‌کوین، اقتصاد و حریم خصوصی" />
-  <meta property="og:image" content="https://bitcoind.me/assets/images/share.png" />
+  <meta name="description" content="ضیاء صدر قصد دارد در این ویدیوها نرم‌افزارهای بیت‌کوینی را آموزش دهد، درباره امنیت کیف‌پول‌ها، حریم خصوصی، استفاده از ابزارهای مختلف بیت‌کوینی صحبت کند، و به معرفی و به‌طور کلی به‌روزرسانی در رابطه با اکوسیستم بیت‌کوین بپردازد. این ویدیوها با اجازه صاحب اثر به سایت اضافه شده‌اند" />
+  <meta property="og:image" content="https://bitcoind.me/assets/images/ziya_sadr_share.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="800" />
   <meta property="og:image:height" content="420" />
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:site" content="bitcoind.me">
-  <meta property="twitter:title" content="bitcoind.me | منابع فارسی بیت‌کوین">
-  <meta property="twitter:description" content="معرفی کتاب‌ها، مقالات، خودآموزها و به‌طور کلی معرفی منابع آموزشی معتبر حوزه بیت‌کوین، اقتصاد و حریم خصوصی">
+  <meta property="twitter:title" content="bitcoind.me | بیت‌کوین با ضیاء">
+  <meta property="twitter:description" content="آموزش نرم‌افزارهای بیت‌کوینی، امنیت کیف‌پول‌ها، حریم خصوصی، استفاده از ابزارهای مختلف بیت‌کوینی و معرفی و بروزرسانی در رابطه با اکوسیستم بیت‌کوین">
   <meta property="twitter:creator" content="bitcoind_me">
-  <meta property="twitter:image:src" content="https://bitcoind.me/assets/images/share.png">
+  <meta property="twitter:image:src" content="https://bitcoind.me/assets/images/ziya_sadr_share.png">
   <meta property="twitter:domain" content="bitcoind.me">
-  <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
-  <script type="text/javascript" src="js/jquery.qrcode.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <style>
-    body {
+    body{
       background-color: #272838;
-      color: #f0f0f0;
+      color:#f0f0f0;
       direction: rtl;
     }
-
     @font-face {
-      font-family: 'IranSans';
-      src: url("assets/fonts/IRANSansWeb.woff") format("woff");
-      font-weight: normal;
-    }
-
+        font-family: 'IranSans';
+        src: url("assets/fonts/IRANSansWeb.woff") format("woff");
+        font-weight: normal; 
+    } 
     @font-face {
-      font-family: 'IranSans-bold';
-      src: url("assets/fonts/IRANSansWeb_Bold.woff") format("woff");
-      font-weight: bold;
+        font-family: 'IranSans-bold';
+        src: url("assets/fonts/IRANSansWeb_Bold.woff") format("woff");
+        font-weight: bold; 
+    }             
+    .ir_title{
+        font-family: IranSans;
+        font-size:1em;
+    }
+    .ir_title_bold{
+        font-family: IranSans-bold;
+        font-size:1.1em;
     }
 
-    .ir_title {
-      font-family: IranSans;
-      font-size: 1em;
-    }
-
-    .ir_title_bold {
-      font-family: IranSans-bold;
-      font-size: 1.1em;
-    }
-
-    a:link {
-      color: #007bff;
+    a:link{
+      color:#007bff;
       text-decoration: none;
     }
-
-    a:hover {
-      color: #007bff;
+    a:hover{
+      color:#007bff;
       text-decoration: none;
     }
-
-    a:active {
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    a:visited {
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    .row_downloadLink>a:link {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    .row_downloadLink>a:hover {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    .row_downloadLink>a:active {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    .row_downloadLink>a:visited {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    .row_downloadLink_dark > a:link{
-      font-family: IranSans;
-      font-size: .9em;
-      color: #272838;
-      text-decoration: none;
-    }
-    .row_downloadLink_dark > a:hover{
-      font-family: IranSans;
-      font-size: .9em;
-      color: #272838;
-      text-decoration: none;
-    }
-    .row_downloadLink_dark > a:active{
-      font-family: IranSans;
-      font-size: .9em;
-      color: #272838;
+    a:active{
+      color:#007bff;
       text-decoration: none;
     }    
-    .row_downloadLink_dark > a:visited{
-      font-family: IranSans;
-      font-size: .9em;
-      color: #272838;
+    a:visited{
+      color:#007bff;
+      text-decoration: none;
+    }
+
+    .row_downloadLink > a:link{
+      color:#fff;
+      text-decoration: none;
+    }
+    .row_downloadLink > a:hover{
+      color:#fff;
+      text-decoration: none;
+    }
+    .row_downloadLink > a:active{
+      color:#fff;
       text-decoration: none;
     }    
-
-    .row_itemDesc>a:link {
-      color: #6aaff9;
+    .row_downloadLink > a:visited{
+      color:#fff;
       text-decoration: none;
     }
 
-    .row_itemDesc>a:hover {
-      color: #6aaff9;
+    .row_gotoLink > a:link{
+      color:#fff;
+      text-align: right;
+      text-decoration: none;
+    }
+    .row_gotoLink > a:hover{
+      color:#fff;
+      text-align: right;
+      text-decoration: none;
+    }
+    .row_gotoLink > a:active{
+      color:#fff;
+      text-align: right;
+      text-decoration: none;
+    }    
+    .row_gotoLink > a:visited{
+      color:#fff;
+      text-align: right;
       text-decoration: none;
     }
 
-    .row_itemDesc>a:active {
-      color: #6aaff9;
+    .row_itemDesc > a:link{
+      color:#6aaff9;
+      text-decoration: none;
+    }
+    .row_itemDesc > a:hover{
+      color:#6aaff9;
+      text-decoration: none;
+    }
+    .row_itemDesc > a:active{
+      color:#6aaff9;
+      text-decoration: none;
+    }    
+    .row_itemDesc > a:visited{
+      color:#6aaff9;
       text-decoration: none;
     }
 
-    .row_itemDesc>a:visited {
-      color: #6aaff9;
-      text-decoration: none;
-    }
-
-    .email_style {
+    .email_style{
       font-family: 'Courier New', Courier, monospace;
       font-weight: bold;
       color: #666;
     }
 
-    .section_header {
-      color: #F3DE8A;
+    .section_header{
+      color:#F3DE8A;
       text-align: right;
       font-family: IranSans-bold;
-      font-size: 1.2em;
+      font-size:1.2em;
     }
-
-    .section_header_light {
-      color: #272838;
-      text-align: right;
-      font-family: IranSans-bold;
-      font-size: 1.2em;
-    }
-
-    .row_itemTitle {
-      color: #fff;
-      text-align: right;
-      font-family: IranSans;
-      font-size: 1em;
-    }
-
-    .row_itemDesc {
-      margin-top: 3px;
-      text-align: right;
-      font-family: IranSans;
-      font-size: .9em;
-    }
-
-    .row_downloadLink {
-      margin-top: 3px;
-      text-align: left;
-      font-family: IranSans;
-      font-size: .9em;
-    }
-
-    .row_abstract {
-      font-family: IranSans;
-      font-size: .9em;
-      text-align: justify;
-      color: rgb(166, 166, 166);
-      border-bottom: solid 1px #45464a;
-      padding-bottom: 7px;
-    }
-
-    .row_abstract_light {
-      font-family: IranSans;
-      font-size: .9em;
-      text-align: justify;
-      color: #666;
-      border-bottom: solid 1px #45464a;
-      padding-bottom: 7px;
-    }    
-    
-    .row_itemTitle_ziya{
-      color:rgb(44, 22, 22);
+    .row_itemTitle{
+      color:#fff;
       text-align: right;
       font-family: IranSans;
       font-size:1em;
-    }      
+    }
+    .row_itemDesc{
+      margin-top:3px;
+      text-align: right;
+      font-family: IranSans;
+      font-size:.85em;      
+    }
+    .row_downloadLink{
+      margin-top:3px;
+      text-align: left;
+      font-family: IranSans;
+      font-size:.9em;  
+    }
+    .row_abstract{
+      font-family: IranSans;
+      font-size:.9em;      
+      text-align: justify;
+      color:rgb(140, 140, 140);
+      border-bottom:solid 1px #45464a;
+      padding-bottom: 7px;
+    }    
   </style>
   <!-- Matomo -->
   <script type="text/javascript">
@@ -216,119 +169,267 @@
       g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
     })();
   </script>
-  <!-- End Matomo Code -->  
+  <!-- End Matomo Code -->
 </head>
 <body>
-  <div class="container my-5" style="direction: rtl;text-align: right;">
-    <p class="text-center" style="font-size:3.7em;font-family: 'Baloo Bhaina 2', cursive;">
-      <a href="#" onclick="window.history.go(-1); return false;" style="cursor: pointer;"><span style="color:#ffa233;">bitcoind</span><span style="color:#fff;">.me</span></a>
-    </p>
-  </div>
-  <div class="pt-5 pb-5" style="background-color:#e1dfdf;color:#272838;">
 
-    <div class="container pb-2">
-      <p class="section_header_light container-fluid">ویدیوهای کانال آموزشی ضیاء صدر</p>
+  <div class="container my-5" style="direction: rtl;">
+		<p class="text-center" style="font-size:3.7em;font-family: 'Baloo Bhaina 2', cursive;">
+      <a href="#" onclick="window.history.go(-1); return false;" style="cursor: pointer;"><span style="color:#ffa233;">bitcoind</span><span style="color:#fff;">.me</span></a>
+    </p>    
+  </div>
+
+  <div style="background-color:#e1dfdf;color:#272838;padding-top:30px;padding-bottom:35px;">
+    <div class="container text-center ir_title" style="width: 65%;font-size:1.3em;">
+      
+      <div class="row text-center">
+        <div class="col-10 pt-4 text-right" style="font-weight: bold;font-size: 1.3em;">
+          <img src="assets/images/video-avatar.png" style="height:40px;">
+          بیت‌کوین با ضیاء 
+          <span style="font-size:.7em;">(آموزش تصویری ابزارهای بیت‌کوین از مبتدی تا پیشرفته)</span>
+        </div>
+        <div class="col-2 text-left" style="font-size: .9em;">
+          <a href="https://twitter.com/@ziya_sadr" target="_blank"><img src="assets/images/ziya_avatar.png" style="height:85px;"></a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="py-5">
+
+    <div class="container mt-2">
+      <p class="section_header container-fluid">کیف‌پول الکترام</p>
     </div>
     <div class="container mb-5" style="width: 75%;">
       <div class="container"> 
-        <div class="row pb-1" style="border-bottom:solid 1px #45464a;">
+        <div class="row pb-1" style="border-bottom:solid 1px #b7b8c7;">
           <div class="col row_itemDesc">عنوان</div>
         </div> 
+        
         <div class="row py-2">
-          <div class="col-lg-10 row_itemTitle_ziya">
-            روش تولید Seed بیت‌کوین با استفاده از کاغذ و تاس
+          <div class="col-lg-10 row_itemTitle row_gotoLink">
+            <a href="https://archive.org/details/electrum-wallet">
+              ساخت کیف‌پول امن و ساده بیت‌کوین (الکترام) Electrum Wallet
+            </a>        
           </div>
-          <div class="col-lg-2 row_downloadLink_dark">
-            <a href="blobs/tuts/gen_bip39_bitcoin_seed_farsi.pdf">لینک به ویدیو</a>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="https://archive.org/details/electrum-wallet">
+              <img src="assets/images/play-icon.png" style="height:20px;">
+            </a>
           </div>
-        </div>
+        </div>    
         <div class="row pb-2">
-          <div class="col row_abstract_light">
-            در این مصاحبه که در سال ۲۰۱۵ انجام شده است، اریک وسکوئل درباره پروژه Libbitcoin و اهمیت متنوع بودن فضای توسعه نرم‌افزاری بیت‌کوین مطالبی ارائه می‌کند. اریک در خلال مصاحبه به سوالات مهمی درباره «هدف بیت‌کوین» و «مهم‌ترین ویژگی» آن پاسخ می‌دهد. حامی ترجمه این پادکست سایت bitcoind.me است.
+          <div class="col row_abstract">
+            مشخصا یکی از دغدغه تمام افرادی که در دنیای بیتکوین فعالیت می‌کنن؛ تامین امنیت داراییشونه برای داشتن این امنیت یکی از بسترها؛ بستری به اسم کیف پوله؛ ساخت، نگهداری و انتقال از طریق کیف پول و از همه مهمتر نحوه کار با این کیف پولها از شاخصه های مهمیه که باید مورد بررسی قرار بگیره! 
+            در این قسمت از ویدئوهای کانال با کیف پول جذاب، دوست داشتنی و ساده به اسم الکترام اشنا شدیم و بررسی کردیم که از کجا و چطور میتونیم از این کیف پول استفاده کنیم و خیالمون تا حدود زیادی راحت باشه.
+          </div>
+        </div>  
+        
+        <div class="row pb-2">
+          <div class="col-lg-10 row_itemTitle row_gotoLink">
+            <a href="https://archive.org/details/2fa-electrum-wallet">
+              کیف‌پول امن بیت‌کوین با تایید دو‌مرحله‌ای 2fa کیف‌پول الکترام Electrum Wallet
+            </a>   
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="blobs/books/21Lessons_ArzDigital.pdf">
+              <a href="https://archive.org/details/2fa-electrum-wallet">
+                <img src="assets/images/play-icon.png" style="height:20px;">
+              </a>
+            </a>
+          </div>
+        </div>          
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            تو این ویدیو یه کیف‌پول بیتکوین میسازیم که برای امنیت بیشتر تایید دومرحله‌ای به شکل چندامضایی داره
+            و ساده و راحت انجام میشه و میتونید استفاده کنید          
           </div>
         </div>
 
-        <div class="row py-2">
-          <div class="col-lg-10 row_itemTitle_ziya">
-            معرفی Seed بیت‌کوین و نحوه استفاده و نگهداری از آن در کیف‌پول الکترام
+        <div class="row pb-2">
+          <div class="col-lg-10 row_itemTitle row_gotoLink">
+            <a href="https://archive.org/details/20201225_20201225_1240">
+              بازیابی کیف‌ پول بیت‌کوین
+            </a>   
           </div>
-          <div class="col-lg-2 row_downloadLink_dark">
-            <a href="blobs/tuts/bitcoin_seed_privatekey_wallet.pdf">لینک به ویدیو</a>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="https://archive.org/details/20201225_20201225_1240">
+              <img src="assets/images/play-icon.png" style="height:20px;">
+            </a>
+          </div>
+        </div> 
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            چگونه کیف‌پول بیتکوین را بازیابی کنیم؟
+            ممکنه کیف‌پول شما مشکلی پیدا کنه یا نیاز به قابلیتی داشته باشید که اون کیف‌پول نداشته باشه. یا که اصلا پاک بشه و بخواید اونو بازیابی کنید.
+            در این ویدیو از با استفاده از کیف‌پول الکترام، روش بازیابی برای تمام کیف‌پول‌های بیتکوین رو توضیح میدم. برای این کار شما نیاز به کلمات بازیابی دارید تا بتونید کیف‌پول رو با استفاده از الکترام بازیابی کنید.
           </div>
         </div>
-        <div class="row pb-2">
-          <div class="col row_abstract_light">
-            در این مصاحبه که در سال ۲۰۱۵ انجام شده است، اریک وسکوئل درباره پروژه Libbitcoin و اهمیت متنوع بودن فضای توسعه نرم‌افزاری بیت‌کوین مطالبی ارائه می‌کند. اریک در خلال مصاحبه به سوالات مهمی درباره «هدف بیت‌کوین» و «مهم‌ترین ویژگی» آن پاسخ می‌دهد. حامی ترجمه این پادکست سایت bitcoind.me است.
-          </div>
-        </div>        
 
-        <div class="row py-2"‌>
-          <div class="col-lg-10 row_itemTitle_ziya">
-            مقدمه‌ای بر حریم خصوصی بیت‌کوین و سؤال و جواب درباره ویرل‌پولِ سامورایی
+        <div class="row pb-2">
+          <div class="col-lg-10 row_itemTitle row_gotoLink">
+            <a href="https://archive.org/details/20201225_20201225_1246">
+              قابلیت‌‌های کیف‌پول الکترام بخش اول
+            </a>  
           </div>
-          <div class="col-lg-2 row_downloadLink_dark">
-            <a href="blobs/tuts/bitcoin-privacy-and-whirlpool-qna-farsi.pdf">لینک به ویدیو</a>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="https://archive.org/details/20201225_20201225_1246">
+              <img src="assets/images/play-icon.png" style="height:20px;">
+            </a>
           </div>
         </div>
         <div class="row pb-2">
-          <div class="col row_abstract_light">
-            در این مصاحبه که در سال ۲۰۱۵ انجام شده است، اریک وسکوئل درباره پروژه Libbitcoin و اهمیت متنوع بودن فضای توسعه نرم‌افزاری بیت‌کوین مطالبی ارائه می‌کند. اریک در خلال مصاحبه به سوالات مهمی درباره «هدف بیت‌کوین» و «مهم‌ترین ویژگی» آن پاسخ می‌دهد. حامی ترجمه این پادکست سایت bitcoind.me است.
+          <div class="col-lg-10 row_itemTitle row_gotoLink">
+            <a href="https://archive.org/details/20201225_20201225_1248">
+              قابلیت‌‌های کیف‌پول الکترام بخش دوم
+            </a>  
           </div>
-        </div>        
+          <div class="col-lg-2 row_downloadLink">
+            <a href="https://archive.org/details/20201225_20201225_1248">
+              <img src="assets/images/play-icon.png" style="height:20px;">
+            </a>
+          </div>
+        </div>
+        <div class="row pb-2">
+          <div class="col-lg-10 row_itemTitle row_gotoLink">
+            <a href="https://archive.org/details/20201225_20201225_1244">
+              قابلیت‌‌های کیف‌پول الکترام بخش سوم
+            </a>  
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="https://archive.org/details/20201225_20201225_1244">
+              <img src="assets/images/play-icon.png" style="height:20px;">
+            </a>
+          </div>
+        </div>
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            همه قابلیت‌های بیتکوین با الکترام!
+            کیف‌پول الکترام یکی از قدرتمند‌ترین و کامل‌ترین ابزارها و نرم‌افزارهای بیتکوینیه
+            سرعت، امنیت و قدرت این کیف‌پول مثال زدنیه و در کنال استفاده از این کیف‌پول تو این ویدیو که به سه بخش تقسیم شده سعی می‌کنم تمامی قابلیت‌های این کیف‌پول رو نشون بدم و کارهای جالب و مهمی که با الکترام میشه انجام داد رو توضیح بدم.
+            شبکه بیتکوین بسیار فراتر از اون‌ چیزی که کیف‌پول‌های بی‌کیفیت ارائه میکنند قابلیت دارد و با الکترام به اغلب قابلیت‌های بیتکوین می‌توان دست یافت          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container mt-2">
+      <p class="section_header container-fluid">ابزارهای بیت‌کوین</p>
+    </div>
+    <div class="container mb-5" style="width: 75%;">
+      <div class="container"> 
+        <div class="row pb-1" style="border-bottom:solid 1px #b7b8c7;">
+          <div class="col row_itemDesc">عنوان</div>
+        </div> 
+        
+        <div class="row py-2">
+          <div class="col-lg-10 row_itemTitle row_gotoLink">
+            <a href="https://archive.org/details/block-explorer">
+              آموزش بررسی تراکنش بیت‌کوین با بلاک اکسپلورر Block Explorer
+            </a>  
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="https://archive.org/details/block-explorer">
+              <img src="assets/images/play-icon.png" style="height:20px;">
+            </a>
+          </div>
+        </div>    
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            سیستم نوین و جدید شبکه بیتکوین و تراکنش‌های اون یه مدل جدید و جالبی ارائه میکنند. برای آشنایی بیشتر با تراکنش‌های بیتکوین و اطلاعات و جزئيات مرتبط به اون‌ها از کیف‌پول یا بلاک اکسپلورر استفاده میشه. بلاک اکسپلورر یه نرم‌افزار مجزاست که برای خواندن تراکنش بیتکوین اطلاعات طبقه‌بندی شده و کاملی به ما ارائه می‌کند. برخی از این بلاک اکسپلورر‌ها به ما تحلیل‌های جالب و مفیدی نیز ارائه می‌کنند.
+            در این ویدیو به معرفی و آموزش استفاده از بلاک اکسپلوررهای بیتکوین می‌پردازم.
+          </div>
+        </div> 
+
+        <div class="row pb-2">
+          <div class="col-lg-10 row_itemTitle row_gotoLink">
+            <a href="https://archive.org/details/testnet">
+              آموزش و تمرین بیت‌کوین با شبکه مشقی، تست‌ نت
+            </a>  
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="https://archive.org/details/testnet">
+              <img src="assets/images/play-icon.png" style="height:20px;">
+            </a>
+          </div>
+        </div>    
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            آموزش و یادگیری نباید گرون باشه!
+            بیتکوین قیمتش زیاده و نمیشه با خیال راحت قابلیت ها و کارهایی که میشه با بیتکوین انجام داد رو تست و آزمایش کرد. برای همین یه شبکه وجود داره به نام شبکه تست نت که بیتکوین‌هاش ارزشی ندارن و این شبکه کاملا مثل بیتکوین عمل میکنه تا یه فضای تست و آزمایش برای شما فراهم کنه. بیتکوینایی که رو این شبکه هستن ارزشی ندارن و رایگان میتونید بدست بیارید. من به این بیتکوینا میگم بیتکوین مشقی :)
+            توی این ویدیو شبکه تست‌نت رو توضیح دادم و نحوه نصب و راه اندازی و استفاده ازش رو آموزش میدم. اگه بیتکوین مشقی خواستید هم میتونید از وبسایتایی که معرفی کردم بدست بیارید یا که به خودم پیام بدید براتون بفرستم.
+          </div>
+        </div> 
+        
+        <div class="row pb-2">
+          <div class="col-lg-10 row_itemTitle row_gotoLink">
+            <a href="https://archive.org/details/pgp_20201225">
+              احراز صحت امضای رمزنگاری فایل‌ها و کلید‌های PGP
+            </a>  
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="https://archive.org/details/pgp_20201225">
+              <img src="assets/images/play-icon.png" style="height:20px;">
+            </a>
+          </div>
+        </div>    
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            به کسی جز خودتان اعتماد نکنید!
+            پی‌جی‌پی یک ابزار و نرم‌افزار کلیدهای رمزنگاری است که از دهه‌ی نود میلادی توسعه یافته و به شکل استاندارد امروزه برای ارتباطات امن رمزگذاری شده و برای احراز صحت فایل‌ها با امضا استفاده می‌شود
+            در فضای نرم‌افزارهای اوپن‌سورس و به خصوص برای استفاده از نرم‌افزارهای بیتکوینی مانند کیف‌پول الکترام یا کیف‌پول‌های، ابزارها و نرم‌افزار نود بیتکوین، تا جایی که ‌میتوانید باید به سایت‌ها و منابع دانلود نرم‌افزار اعتماد نکنید و حتما کلید سازنده و امضای نرم افزارها را قبل از استفاده بررسی نمایید
+            مفهوم دیگری که در این ویدیو به آن می‌پردازیم، مفهوم شبکه اعتماد یا همان wot می‌باشد
+          </div>
+        </div>         
+
 
       </div>
     </div>
 
-    <div class="container my-5" style="width: 75%;">
-      <div class="row">
-        <div class="col">
-          برای لینک یوتوب
+    <div class="container mt-2">
+      <p class="section_header container-fluid">کیف‌پول سامورایی</p>
+    </div>
+    <div class="container mb-5" style="width: 75%;">
+      <div class="container"> 
+        <div class="row pb-1" style="border-bottom:solid 1px #b7b8c7;">
+          <div class="col-4 row_itemDesc">عنوان</div>
         </div>
+        <div class="row py-2">
+          <div class="col row_itemTitle row_gotoLink">
+            <a href="https://archive.org/details/samourai-wallet">
+              ساخت کیف‌پول امن موبایلی بیتکوین سامورای والت Samourai Wallet
+            </a>  
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="https://archive.org/details/samourai-wallet">
+              <img src="assets/images/play-icon.png" style="height:20px;">
+            </a>
+          </div>
+        </div>    
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            یه سامورایی که مراقب بیتکوین هاشه!
+            مشخصا یکی از دغدغه تمام افرادی که در دنیای بیتکوین فعالیت می‌کنن؛ تامین امنیت داراییشونه برای داشتن این امنیت یکی از بسترها؛ بستری به اسم کیف پوله؛ ساخت، نگهداری و انتقال از طریق کیف پول و از همه مهمتر نحوه کار با این کیف پولها از شاخصه های مهمیه که باید مورد بررسی قرار بگیره! 
+            در این قسمت از ویدئوهای کانال با کیف پول خفن و دوست‌داشتنی سامورای والت اشنا شدیم و بررسی کردیم که از کجا و چطور میتونیم از این کیف پول استفاده کنیم و خیالمون از امنیت دارایی‌مون راحت باشه.
+            در ادامه ویدئوها با ویژگی‌های جذاب دیگری مثل حریم‌خصوصی و نکات امنیتی هم اشنا خواهید شد.
+          </div>
+        </div>  
       </div>
     </div>
 
   </div>
 
-  <script type="text/javascript">
-    function showDonationAddress() {
-      $('#donateQr').show();
-      $('#donateButton').hide();
-    }
+  <div class="py-5" style="background-color:#e1dfdf;color:#272838;">
+    <div class="container" style="width: 65%;">
+      <div class="row">
+        <div class="col-11 ir_title" style="text-align: justify;">
+          این ویدیوها با اجازه صاحب اثر بر روی سایت قرار گرفته‌اند. می‌توانید از طریق توئیتر با ضیاء صدر <span style="font-size: .9em;">(<a href="https://twitter.com/@ziya_sadr" target="_blank">ziya_sadr@</a>)</span> در ارتباط باشید یا برای مشاهده کانال او روی یوتوب، بر روی آیکون روبرو کلیک کنید.‌
+        </div>
+        <div class="col-1 text-right"><a href="https://www.youtube.com/c/ZiyaSadr"><img src="assets/images/youtube-avatar.png" style="height:45px;"></a></div>
+      </div>
+    </div>
+  </div>
 
-    function getRemoteData(addy) {
-      return $.ajax({
-        'url': `https://api.blockcypher.com/v1/btc/main/addrs/${addy}`,
-        // 'url': `https://api.blockcypher.com/v1/btc/test3/addrs/${addy}`,
-        'type': 'GET',
-        'async': false
-      }).responseText
-    }
-
-    $(document).ready(function () {
-
-      // jQuery('#qrcodeCanvas').qrcode({
-      //   text: ''
-      // });
-      // $('#qrcodeAddress').html('')
-      // return;
-
-      var address_list = [
-        , '35Qvp5evfJULBy5dwnCPjyAKg4PvE7C8dv'
-        , '3JvCNMRyzhdeTq5mDxCiYaJ2hbcAznwNjh'
-        , '321kseHUC6YYQgH2bvUaXFqAcMBnaxBnjv'
-      ]
-
-      for (i = 0; i < address_list.length; i++) {
-        let numberOfTxs = JSON.parse(getRemoteData(address_list[i])).final_n_tx;
-        if (numberOfTxs == 0) {
-          jQuery('#qrcodeCanvas').qrcode({
-            text: address_list[i]
-          });
-          $('#qrcodeAddress').html(address_list[i])
-          break;
-        }
-      }
-    })
-  </script>
 </body>
 </html>
