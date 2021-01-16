@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <title>bitcoind.me | بیت‌کوین برای توسعه دهندگان </title>
+  <meta http-equiv="onion-location" content="http://bitcoin6djvpbydmvqhdarbdb2oaicnp6pbu2kwpcfwpcy2h4vurvjad.onion" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content=" معرفی پروتوکل بیت‌کوین و بررسی بخش های مختلف پیاده سازی bitcoin-core " />
+  <meta property="og:image" content="https://bitcoind.me/assets/images/bitcoinfordevs/sharable.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="420" />
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:site" content="bitcoind.me">
+  <meta property="twitter:title" content="bitcoind.me | بیت‌کوین برای توسعه دهندگان ">
+  <meta property="twitter:description" content=" معرفی پروتوکل بیت‌کوین و بررسی بخش های مختلف پیاده سازی bitcoin-core ">
+  <meta property="twitter:creator" content="bitcoind_me">
+  <meta property="twitter:image:src" content="https://bitcoind.me/assets/images/bitcoinfordevs/sharable.png">
+  <meta property="twitter:domain" content="bitcoind.me">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <style>
+    body{
+      background-color: #272838;
+      color:#f0f0f0;
+      direction: rtl;
+    }
+    @font-face {
+        font-family: 'IranSans';
+        src: url("assets/fonts/IRANSansWeb.woff") format("woff");
+        font-weight: normal; 
+    } 
+    @font-face {
+        font-family: 'IranSans-bold';
+        src: url("assets/fonts/IRANSansWeb_Bold.woff") format("woff");
+        font-weight: bold; 
+    }             
+    .ir_title{
+        font-family: IranSans;
+        font-size:1em;
+    }
+    .ir_title_bold{
+        font-family: IranSans-bold;
+        font-size:1.1em;
+    }
+
+    a:link{
+      color:#007bff;
+      text-decoration: none;
+    }
+    a:hover{
+      color:#007bff;
+      text-decoration: none;
+    }
+    a:active{
+      color:#007bff;
+      text-decoration: none;
+    }    
+    a:visited{
+      color:#007bff;
+      text-decoration: none;
+    }
+
+    .row_downloadLink > a:link{
+      color:#fff;
+      text-decoration: none;
+    }
+    .row_downloadLink > a:hover{
+      color:#fff;
+      text-decoration: none;
+    }
+    .row_downloadLink > a:active{
+      color:#fff;
+      text-decoration: none;
+    }    
+    .row_downloadLink > a:visited{
+      color:#fff;
+      text-decoration: none;
+    }
+
+    .row_gotoLink > a:link{
+      color:#fff;
+      text-align: right;
+      text-decoration: none;
+    }
+    .row_gotoLink > a:hover{
+      color:#fff;
+      text-align: right;
+      text-decoration: none;
+    }
+    .row_gotoLink > a:active{
+      color:#fff;
+      text-align: right;
+      text-decoration: none;
+    }    
+    .row_gotoLink > a:visited{
+      color:#fff;
+      text-align: right;
+      text-decoration: none;
+    }
+
+    .row_itemDesc > a:link{
+      color:#6aaff9;
+      text-decoration: none;
+    }
+    .row_itemDesc > a:hover{
+      color:#6aaff9;
+      text-decoration: none;
+    }
+    .row_itemDesc > a:active{
+      color:#6aaff9;
+      text-decoration: none;
+    }    
+    .row_itemDesc > a:visited{
+      color:#6aaff9;
+      text-decoration: none;
+    }
+
+    .email_style{
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      color: #666;
+    }
+
+    .section_header{
+      color:#F3DE8A;
+      text-align: right;
+      font-family: IranSans-bold;
+      font-size:1.2em;
+    }
+    .row_itemTitle{
+      color:#fff;
+      text-align: right;
+      font-family: IranSans;
+      font-size:1em;
+    }
+    .row_itemDesc{
+      margin-top:3px;
+      text-align: right;
+      font-family: IranSans;
+      font-size:.85em;      
+    }
+    .row_downloadLink{
+      margin-top:3px;
+      text-align: left;
+      font-family: IranSans;
+      font-size:.9em;  
+    }
+    .row_abstract{
+      font-family: IranSans;
+      font-size:.9em;      
+      text-align: justify;
+      color:rgb(140, 140, 140);
+      border-bottom:solid 1px #45464a;
+      padding-bottom: 7px;
+    }    
+  </style>
+  <!-- Matomo -->
+  <script type="text/javascript">
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://stats.bitcoind.me/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+</head>
+<body>
+
+  <div class="container my-5" style="direction: rtl;">
+		<p class="text-center" style="font-size:3.7em;font-family: 'Baloo Bhaina 2', cursive;">
+      <a href="#" onclick="window.history.go(-1); return false;" style="cursor: pointer;"><span style="color:#ffa233;">bitcoind</span><span style="color:#fff;">.me</span></a>
+    </p>    
+  </div>
+
+  <div style="background-color:#e1dfdf;color:#272838;padding-top:30px;padding-bottom:35px;">
+    <div class="container text-center ir_title" style="width: 65%;font-size:1.3em;">
+      
+      <div class="row text-center">
+        <div class="col-10 pt-4 text-right" style="font-weight: bold;font-size: 1.3em;">
+          <img src="assets/images/video-avatar.png" style="height:40px;">
+            بیت‌کوین برای توسعه دهندگان
+        </div>
+        <div class="col-2 text-left" style="font-size: .9em;">
+          <img src="assets/images/bitcoinfordevs/avatar.png" style="height:85px;">
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  <div class="py-5">
+
+    <div class="container mt-2">
+      <p class="section_header container-fluid">پروتوکول بیت‌کوین</p>
+    </div>
+    <div class="container mb-5" style="width: 75%;">
+      <div class="container"> 
+        <div class="row pb-1" style="border-bottom:solid 1px #b7b8c7;">
+          <div class="col-4 row_itemDesc">عنوان</div>
+        </div>
+
+        <div class="row py-2">
+          <div class="col row_itemTitle row_gotoLink">
+            <a href="https://archive.org/details/bfd-bitcoine-core-intro">
+              قسمت اول - معرفی بیت‌کوین و bitcoin-core
+            </a>  
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="https://archive.org/details/bfd-bitcoine-core-intro">
+              <img src="assets/images/play-icon.png" style="height:20px;">
+            </a>
+          </div>
+        </div>    
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            در این قسمت پیاده‌سازی مرجع پروتکل بیت‌کوین رو معرفی می‌کنیم
+          </div>
+        </div>
+
+      </div>
+    </div>    
+
+  </div>
+
+  <div class="py-5" style="background-color:#e1dfdf;color:#272838;">
+    <div class="container" style="width: 65%;">
+      <div class="row">
+        <div class="col-10 ir_title" style="text-align: justify;">
+          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="مجوز کریتیو کامنز" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />این کار مجوز دارد تحت <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">مجوز کریتیو کامنز تخصیص 4.0 بین‌المللی</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
