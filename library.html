@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <title>bitcoind.me | کتابخانه</title>
+  <meta http-equiv="onion-location" content="http://bitcoin6djvpbydmvqhdarbdb2oaicnp6pbu2kwpcfwpcy2h4vurvjad.onion" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="معرفی کتاب‌ها، مقالات، خودآموزها و به‌طور کلی معرفی منابع آموزشی معتبر حوزه بیت‌کوین، اقتصاد و حریم خصوصی" />
+  <meta property="og:image" content="https://bitcoind.me/assets/images/bitcoind_me_library_dark.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="420" />
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:site" content="bitcoind.me">
+  <meta property="twitter:title" content="bitcoind.me | کتابخانه">
+  <meta property="twitter:description" content="معرفی کتاب‌ها، مقالات، خودآموزها و به‌طور کلی معرفی منابع آموزشی معتبر حوزه بیت‌کوین، اقتصاد و حریم خصوصی">
+  <meta property="twitter:creator" content="bitcoind_me">
+  <meta property="twitter:image:src" content="https://bitcoind.me/assets/images/bitcoind_me_library_dark.png">
+  <meta property="twitter:domain" content="bitcoind.me">
+  <link href="css/bootstrap-4.6.min.css" rel="stylesheet">
+  <style>
+    body{
+      background-color: #272838;
+      color:#f0f0f0;
+      direction: rtl;
+    }
+    @font-face {
+        font-family: 'IranSans';
+        src: url("assets/fonts/IRANSansWeb.woff") format("woff");
+        font-weight: normal; 
+    } 
+    @font-face {
+        font-family: 'IranSans-bold';
+        src: url("assets/fonts/IRANSansWeb_Bold.woff") format("woff");
+        font-weight: bold; 
+    }
+    /* latin */
+    @font-face {
+      font-family: 'Baloo Bhaina 2';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(assets/fonts/qWcwB6yyq4P9Adr3RtoX1q6ySiQjtiEnm4c.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }    
+    .ir_title{
+        font-family: IranSans;
+        font-size:1em;
+    }
+    .ir_title_bold{
+        font-family: IranSans-bold;
+        font-size:1.1em;
+    }
+
+    a:link{
+      color:#007bff;
+      text-decoration: none;
+    }
+    a:hover{
+      color:#007bff;
+      text-decoration: none;
+    }
+    a:active{
+      color:#007bff;
+      text-decoration: none;
+    }    
+    a:visited{
+      color:#007bff;
+      text-decoration: none;
+    }
+
+    .row_downloadLink > a:link{
+      color:#fff;
+      text-decoration: none;
+    }
+    .row_downloadLink > a:hover{
+      color:#fff;
+      text-decoration: none;
+    }
+    .row_downloadLink > a:active{
+      color:#fff;
+      text-decoration: none;
+    }    
+    .row_downloadLink > a:visited{
+      color:#fff;
+      text-decoration: none;
+    }
+
+    .row_downloadLink_dark > a:link{
+      color: #272838;
+      text-decoration: none;
+    }
+    .row_downloadLink_dark > a:hover{
+      color: #272838;
+      text-decoration: none;
+    }
+    .row_downloadLink_dark > a:active{
+      color: #272838;
+      text-decoration: none;
+    }    
+    .row_downloadLink_dark > a:visited{
+      color: #272838;
+      text-decoration: none;
+    }
+
+    .row_gotoLink > a:link{
+      color:#fff;
+      text-align: right;
+      text-decoration: none;
+    }
+    .row_gotoLink > a:hover{
+      color:#fff;
+      text-align: right;
+      text-decoration: none;
+    }
+    .row_gotoLink > a:active{
+      color:#fff;
+      text-align: right;
+      text-decoration: none;
+    }    
+    .row_gotoLink > a:visited{
+      color:#fff;
+      text-align: right;
+      text-decoration: none;
+    }
+
+    .row_itemDesc > a:link{
+      color:#6aaff9;
+      text-decoration: none;
+    }
+    .row_itemDesc > a:hover{
+      color:#6aaff9;
+      text-decoration: none;
+    }
+    .row_itemDesc > a:active{
+      color:#6aaff9;
+      text-decoration: none;
+    }    
+    .row_itemDesc > a:visited{
+      color:#6aaff9;
+      text-decoration: none;
+    }
+
+    .email_style{
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      color: #666;
+    }
+
+    .section_header{
+      color:#F3DE8A;
+      text-align: right;
+      font-family: IranSans-bold;
+      font-size:1.2em;
+    }
+    .row_itemTitle{
+      color:#fff;
+      text-align: right;
+      font-family: IranSans;
+      font-size:1em;
+    }
+    .row_itemDesc{
+      margin-top:3px;
+      text-align: right;
+      font-family: IranSans;
+      font-size:.85em;      
+    }
+    .row_downloadLink{
+      margin-top:3px;
+      text-align: left;
+      font-family: IranSans;
+      font-size:.9em;  
+    }
+    .row_abstract{
+      font-family: IranSans;
+      font-size:.9em;      
+      text-align: justify;
+      color:rgb(140, 140, 140);
+      border-bottom:solid 1px #45464a;
+      padding-bottom: 7px;
+    }
+
+    .row_abstract_noborder{
+      font-family: IranSans;
+      font-size:.9em;
+      text-align: justify;
+      color:rgb(140, 140, 140);
+      padding-bottom: 7px;
+    }
+
+    .row_itemTitle_ziya{
+      color:rgb(44, 22, 22);
+      text-align: right;
+      font-family: IranSans;
+      font-size:1em;
+    }   
+
+    .download-icon{
+      height:20px;
+      opacity:.7;
+    } 
+  </style>
+  <!-- Matomo -->
+  <script type="text/javascript">
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://stats.bitcoind.me/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+</head>
+<body>
+
+  <div class="container my-5" style="direction: rtl;text-align: right;">
+		<p class="text-center" style="font-size:4.2em;font-family: 'Baloo Bhaina 2', cursive;">
+      <a href="#" onclick="window.history.go(-1); return false;" style="cursor: pointer;"><span style="color:#ffa233;">bitcoind</span><span style="color:#fff;">.me</span></a>
+    </p>    
+  </div>
+
+  <div style="background-color:#e1dfdf;color:#272838;padding-top:30px;padding-bottom:35px;">
+    <div class="container text-center ir_title" style="width: 65%;font-size:1.3em;">
+      
+      <div class="row text-center">
+        <div class="col-10 pt-4 text-right" style="font-weight: bold;font-size: 1.4em;">
+          <span style="font-weight: bold;font-size: 1.5em;">کتابخانه</span>
+          <span style="font-size:.7em;">(منابع معتبر و برگزیده در حوزه بیت‌کوین، اقتصاد، و حریم خصوصی)</span>
+        </div>
+        <div class="col-2 text-left" style="font-size: .9em;">
+          <img src="assets/images/books.png" style="height:100px;">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- <div class="py-5" style="background-color:#e1dfdf;color:#272838;">
+    <p style="font-size:3.1em;" class="text-center ir_title_bold">
+      کتابخانه
+    </p>
+    <p class="container ir_title" style="direction: rtl;text-align: right;width: 65%;line-height: 1.6em;font-size:1.4em;">
+      کتاب‌ها، مقالات، خودآموزها، و بطور کلی منابع آموزشی و معتبر و برگزیده در حوزه بیت‌کوین، اقتصاد، و حریم خصوصی که توسط علاقه‌مندان و فعالان جامعه فارسی‌زبان بیت‌کوین تالیف یا ترجمه شده‌اند.
+    </p>
+  </div> -->
+   
+  <div class="pb-5 pt-4">
+
+    <!-- <div class="container mb-5 mt-3 ir_title text-right" style="width: 75%;font-size: 1em;">
+      <div class="alert alert-info" role="alert">
+        <div class="row">
+          <div class="col-lg-10">
+            <div style="padding:20px;font-weight: bold;">
+              سخنی با بیت‌کوینرهای آینده
+              <br/><br/>
+              اگر به‌تازگی با بازارهای ارز دیجیتال آشنا شده‌اید، سؤال و جواب کوتاهی را که در این فایل برای شما آماده کرده‌ایم مطالعه کنید.
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div style="padding:30px 20px 20px 20px;">
+              <div class="row">
+                <div class="col text-center">
+                  <a href="blobs/books/sokhani-ba-bitcoinerhaye-ayandeh-bitcoind_me.pdf">
+                    <img src="assets/images/pdf-icon.png" style="height: 60px;">
+                  </a>                  
+                </div>
+              </div>
+              <div class="row">
+                <div class="col text-center">
+                  <a href="blobs/books/sokhani-ba-bitcoinerhaye-ayandeh-bitcoind_me.pdf">
+                    <span style="font-size:.9em;">
+                     دانلود
+                    </span>
+                  </a>                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container mt-3">
+      <p class="section_header container-fluid">کتاب و مقالات صوتی</p>
+    </div>
+    <div class="container mb-5" style="width: 75%;">
+    <div class="container" style="border-bottom:solid 1px #45464a;">
+      <div class="row pb-1" style="border-bottom:solid 1px #b7b8c7;">
+        <div class="col row_itemDesc">عنوان</div>
+        <!-- <div class="col-8 row_itemDesc">توضیحات</div> -->
+      </div>
+      <div class="row container">
+        <div class="col-11" style="padding:0px">
+          <div class="row py-2">
+            <div class="pt-2 col-lg-6 row_itemTitle row_gotoLink">
+              <a href="https://archive.org/details/ketabe-koochake-bitcoin-audio-book">
+                نسخه صوتی فارسی‌ کتاب کوچک بیت‌کوین
+              </a>
+            </div>
+            <div class="col-lg-6 row_itemDesc">
+              گوینده: <a href="https://twitter.com/coinlet_hodler">Coinlet Hodler</a><br/>
+              نوشته: <a href="https://twitter.com/gladstein">Alex Gladstein</a> و دیگران  - ترجمه: الف.آزاد و دیگران
+            </div>
+          </div>
+          <div class="row_abstract_noborder">
+            نسخه صوتی کتاب The little bitcoin Book  نوشته الکس گلداشتاین و دیگران در پاییز سال ۱۳۹۹ توسط الف.آزاد و دیگران به فارسی ترجمه و در سایت bitcoind.me برای استفاده علاقه‌مندان به بیت‌کوین قرار گرفته است. نسخه صوتی این کتاب توسط coinlet holder تهیه و برای استفاده عموم منتشر شده است. تمامی حقوق مادی و معنوی این اثر متعلق به پدیدآورندگان آن است.
+          </div>
+        </div>
+        <div class="col-1 text-left">
+          <a href="https://archive.org/details/ketabe-koochake-bitcoin-audio-book">
+            <img class="mt-4 mb-2" src="assets/images/audio-book.png" style="height:90px;"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="container mt-5">
+      <p class="section_header container-fluid">کتاب، مقاله، و مطالب ترجمه شده</p>
+    </div>
+    <div class="container mb-5" style="width: 75%;">
+      <div class="container"> 
+        <div class="row pb-1" style="border-bottom:solid 1px #b7b8c7;">
+          <div class="col-4 row_itemDesc">عنوان</div>
+          <div class="col-8 row_itemDesc">توضیحات</div>
+        </div> 
+        
+        <div class="row py-2">
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="blobs/books/bullish-case-for-bitcoin-CoinIran_Com.pdf">
+              روند صعودی بیت‌کوین 
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            ترجمه مقاله The bullish case for Bitcoin | نوشته: <a href="https://twitter.com/real_vijay">Vijay Boyapati</a>  - ترجمه: <a href="https://twitter.com/ham3ds_">حامد صالحی</a>
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="blobs/books/bullish-case-for-bitcoin-CoinIran_Com.pdf">
+              <img src="assets/images/download-icon.png" class="download-icon">
+            </a>
+          </div>
+        </div>    
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            در این کتاب مسیر تاریخی و تکوینی بیت‌کوین به عنوان یک پول از ذخیره ارزش تا واسطه‌ای برای مبادلات ترسیم شده است. حامی ترجمه این کتاب سایت coiniran.com است.
+          </div>
+        </div>  
+        
+        <div class="row pb-2">
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="blobs/books/21Lessons_ArzDigital.pdf">
+              ۲۱ درسی که از بیت‌کوین یاد گرفتم 
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            ترجمه کتاب <label style="direction: ltr;height:10px;">21 Lessons</label> | نوشته: <a href="https://twitter.com/dergigi">dergigi</a>  - ترجمه: <a href="https://twitter.com/gorfist">نیما ملک‌پور</a>
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="blobs/books/21Lessons_ArzDigital.pdf">
+              <img src="assets/images/download-icon.png" class="download-icon">
+            </a>
+          </div>
+        </div>          
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            درس‌های زیادی هستند که باید بیاموزیم و هر کسی که وارد دنیای بیت کوین می‌شود، احتمالا چیزهای متفاوتی از آنچه گفته خواهد شد، یاد می‌گیرد. امیدوارم که این درس‌ها به دردتان بخورد و فرایند یادگیری آن‌ها از طریق بازخوانی کلمات سخت نباشد. حامی ترجمه این کتاب سایت arzdigital.com است.
+          </div>
+        </div>
+
+        <div class="row pb-2">
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="blobs/books/ketabe-koochake-bitcoin-farsi.pdf">
+              کتاب کوچک بیت‌کوین
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            ترجمه کتاب The little bitcoin Book | نوشته: <a href="https://twitter.com/gladstein">Alex Gladstein</a> و دیگران - ترجمه: الف.آزاد و دیگران
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="blobs/books/ketabe-koochake-bitcoin-farsi.pdf">
+              <img src="assets/images/download-icon.png" class="download-icon">
+            </a>
+          </div>
+        </div> 
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            ممکن است شما درباره بیت‌کوین از دوستانتان یا از اخبار چیزی شنیده باشید. چرا قیمت آن تغییر می‌کند؟ آیا یک سرمایه‌گذاری خوب است؟ اصلا چرا ارزش دارد؟ چرا مردم طوری درباره آن حرف می‌زنند که انگار قرار است دنیا را تغییر دهد؟ این کتاب توضیح می‌دهد که پول در دنیای امروز ما چه اشکالاتی دارد و چرا بیت‌‌کوین ابداع شده تا جایگزینی برای آن باشد. حامی ترجمه این کتاب سایت bitcoind.me است.
+          </div>
+        </div>
+
+        <div class="row pb-2">
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="blobs/books/ekhterae-bitcoin-farsi-nodrunner.pdf">
+              اختراع بیت‌کوین
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            ترجمه کتاب Inventing Bitcoin | نوشته: <a href="https://twitter.com/skwp">Yan Pritzker</a> - ترجمه: <a href="https://twitter.com/nodrunner">nodrunner</a>
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="blobs/books/ekhterae-bitcoin-farsi-nodrunner.pdf">
+              <img src="assets/images/download-icon.png" class="download-icon">
+            </a>
+          </div>
+        </div> 
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            بیشتر افراد، اولین باری که از بیت‌کوین می‌شنوند چیزی از آن نمی‌فهمند. آیا بیت‌کوین پول جادویی اینترنتی است؟ از کجا آمده؟ کنترل آن دست چه کسی است؟ چرا انقدر مهم است؟ برای من تمام چیزهایی که کنار هم جمع شده‌اند تا بیت‌کوین را بسازند اهمیت زیادی داشت. تلاش می‌کنم در این کتاب دانش خود را به زبان بسیار ساده و قابل درک به شما انتقال دهم.
+          </div>
+        </div>        
+
+        <div class="row pb-2">
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="blobs/books/stephan-livera-71-farsi-bitcoind_me.pdf">
+              مقدمه‌ای بر اندیشه مکتب اقتصاد اتریشی؛ از منظر بیت‌کوین
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            ترجمه متن قسمت ۷۱ پادکست استفان لیورا | مهمان: <a href="https://twitter.com/stephanlivera">Stephan Livera</a> - ترجمه: الف.آزاد
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="blobs/books/stephan-livera-71-farsi-bitcoind_me.pdf">
+              <img src="assets/images/download-icon.png" class="download-icon">
+            </a>
+          </div>
+        </div> 
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            در این قسمت، استفان لیورا برای شنوندگان تازه‌وارد پادکست خود درباره اندیشه مکتب اقتصاد اتریشی از منظر بیت‌کوین مطالب کلی و به‌صورت مونولوگ مطرح می‌کند و شرح می‌دهد که چرا از این منظر می‌توان بیت‌کوین را به خوبی درک کرد. خواندن و شنیدن این قسمت به همه علاقمندان به بیت‌کوین و اقتصاد پیشنهاد می‌شود. حامی ترجمه این پادکست سایت bitcoind.me است.
+          </div>
+        </div>
+
+        <div class="row pb-2">
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="blobs/books/interview-with-eric-voskuil-farsi.pdf">
+              بررسی اهمیت تنوع توسعه‌دهندگان پروتکل بیت‌کوین
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            ترجمه متن مصاحبه سال ۲۰۱۵ مجله بیت‌کوین با اریک وسکوئل | مهمان: <a href="https://twitter.com/evoskuil">Eric Voskuil</a> - ترجمه: الف.آزاد
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="blobs/books/interview-with-eric-voskuil-farsi.pdf">
+              <img src="assets/images/download-icon.png" class="download-icon">
+            </a>
+          </div>
+        </div>
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            در این مصاحبه که در سال ۲۰۱۵ انجام شده است، اریک وسکوئل درباره پروژه Libbitcoin و اهمیت متنوع بودن فضای توسعه نرم‌افزاری بیت‌کوین مطالبی ارائه می‌کند. اریک در خلال مصاحبه به سوالات مهمی درباره «هدف بیت‌کوین» و «مهم‌ترین ویژگی» آن پاسخ می‌دهد. حامی ترجمه این پادکست سایت bitcoind.me است.
+          </div>
+        </div>
+
+        <div class="row pb-2">
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="blobs/books/stephan-livera-239-farsi-bitcoind_me.pdf">
+              در باب مقابله با قوانین پیشنهادی دولت‌ها برای محدود کردن اختیارات افراد در استفاده بدون واسطه از بیت‌کوین
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            ترجمه متن قسمت ۲۳۹ پادکست استفان لیورا | مهمان: <a href="https://twitter.com/jchervinsky">Jake Chervinsky</a> - ترجمه: الف.آزاد
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="blobs/books/stephan-livera-239-farsi-bitcoind_me.pdf">
+              <img src="assets/images/download-icon.png" class="download-icon">
+            </a>
+          </div>
+        </div> 
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            در این گفتگو ظرافت‌های تدوین قانون برای مؤسسات مالی فعال در زمینه بیت‌کوین، همچنین وظیفه کاربران بیت‌کوین در راه مقابله با قوانین سخت‌گیرانه به تفصیل مورد بحث قرار می‌گیرند. مطالعه این گفتگو به سیاست‌گذاران، کارآفرینان مؤسسات مالی، و از همه مهم‌تر بیت‌کوینرهای فارسی زبان پیشنهاد می‌شود. حامی ترجمه این پادکست سایت bitcoind.me است.
+          </div>
+        </div>
+
+        <div class="row pb-2">
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="blobs/books/dolatha-va-bitcoin_estammadDoyom.pdf">
+              آیا دولت‌ها می‌توانند بیت‌کوین را متوقف کنند؟
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            ترجمه مقاله Can Governments Stop Bitcoin | نوشته: <a href="https://twitter.com/gladstein">Alex Gladstein</a> - ترجمه: <a href="https://twitter.com/estammadDoyom">استمّد دویوم</a>
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="blobs/books/dolatha-va-bitcoin_estammadDoyom.pdf">
+              <img src="assets/images/download-icon.png" class="download-icon">
+            </a>
+          </div>
+        </div> 
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            تعداد کاربران جهانی بیت کوین از ۱۰۰ میلیون نفر گذشته است و امنیت شبکه و تعداد برنامه نویسان و ویژگی های جدیدی که برایش طراحی می کنند به اندازه بی سابقه‌ای رسیده است. ده‌ها شرکت از جمله تسلا و اسکوئر بخشی از ترازنامه مالی خود را به بیتکوین اختصاص داده اند. این موفقیت در سراسر جهان به این معنی نیست که هیچکس برای متوقف کردن آن تلاشی نکرده است. این مقاله روش‌هایی که برای متوقف کردن بیت‌کوین به‌کار گرفته شده است را بررسی می‌کند.
+          </div>
+        </div>
+
+        <div class="row pb-2">
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="blobs/books/tarikhcheye-uasf-bitcoind_me.pdf">
+              مروری بر مناقشه افزایش سایز بلاک (UASF)
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            برداشتی از مقاله The Long Road To SegWit | نوشته: <a href="https://twitter.com/AaronvanW">Aaron van Wirdum</a> - ترجمه و تالیف: الف.آزاد
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="blobs/books/tarikhcheye-uasf-bitcoind_me.pdf">
+              <img src="assets/images/download-icon.png" class="download-icon">
+            </a>
+          </div>
+        </div> 
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            در حین فعال‌سازی سِگویت (SegWit) بر روی شبکه بیت‌کوین، میان طرفین دعوا که انگیزه‌‌های متفاوتی داشتند یک بن‌بست به وجود آمد. ولی درنهایت این درگیری به همه طرف‌های درگیر آموخت که شبکه بیت‌کوین چگونه کار می‌کند. سؤال اصلی این بود: آیا ماینرها کنترل بیت‌کوین را دردست دارند یا کاربران و نودها آن را کنترل می‌کنند. توسعه‌دهندگان بیت‌کوین چه نقشی دارند؟ 
+          </div>
+        </div>
+
+
+        <div class="row pb-2">
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="blobs/books/stephan-livera-29-farsi-bitcoind_me.pdf">
+              کیف پول سامورایی و ابزارهای حفظ حریم خصوصی در بیت‌کوین
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            ترجمه متن قسمت ۲۹ پادکست استفان لیورا | مهمان: <a href="https://twitter.com/samouraiwallet">Samourai Wallet</a> - ترجمه: <a href="https://twitter.com/nodrunner">nodrunner</a>
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="blobs/books/stephan-livera-29-farsi-bitcoind_me.pdf">
+              <img src="assets/images/download-icon.png" class="download-icon">
+            </a>
+          </div>
+        </div>
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            در این گفتگو استفان لیورا و دارنده شناسه سامورایی والت در توئیتر در مورد اهمیت حریم خصوصی و ابزارهای موجود صحبت می‌کنند. این مصاحبه در سال ۲۰۱۸ انجام شده ولی با این حال از اهمیت بسیاری برخوردار است. سامورایی والت در این گفتگو از ابزارهایی صحبت می‌کند که در حال حاضر برای استفاده کاربران آماده و قابل استفاده هستند.
+          </div>
+        </div>
+
+        <div class="row pb-2">
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="blobs/books/tafavote-bitcoin-va-altcoinha-bitcoind_me.pdf">
+              ۴ مقاله در باب بررسی تفاوت‌های بیت‌کوین و آلت‌کوین‌ها
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            ترجمه مقالات منتشر شده در سایت مدیوم | نوشته: <a href="https://twitter.com/jimmysong">‌Jimmy Song</a> - ترجمه: <a href="https://twitter.com/ziya_sadr">ضیاء صدر</a>
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="blobs/books/tafavote-bitcoin-va-altcoinha-bitcoind_me.pdf">
+              <img src="assets/images/download-icon.png" class="download-icon">
+            </a>
+          </div>
+        </div>
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            امیدوارم در این مقالات بتوانم تمام این سؤالات را بررسی کنم: آیا آلت‌کوین‌ها ویژگی‌های فنی ارزشمند جدیدی معرفی می‌کنند؟ آیا خریداران آلت‌کوین‌ها به غیرمتمرکز شدن آن‌ها امیدوارند؟ چه چیزی باعث موفقیت لایت‌کوین (Litecoin) شد درحالی‌که پسرعموی بزرگ‌تر و بسیار مشابه آن، فیربریکس (Fairbrix) شکست خورد؟ چرا کوین‌هایی با پیش استخراج مانند آی ایکس کوین (IxCoin) شکست خوردند در حالی که یک کوین مانند اتریوم (Ethereum) موفق شد؟ این موفقیت‌ها و شکست‌های نسبی را به چه چیزی می‌توانیم نسبت دهیم؟
+          </div>
+        </div>
+
+        <div class="row pb-2">
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="blobs/books/chera-bitcoin-ponzi-nist-bitcoind_me.pdf">
+              چرا بیت‌کوین یک طرح کلاه‌برداری پانزی نیست
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            بررسی دقیق طرح‌های پانزی و مقایسه آن‌ها با بیت‌کوین  | نوشته: <a href="https://lynalden.com">Lyn Alden</a> - ترجمه: <a href="https://twitter.com/Mr_MB2">Master</a>
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="blobs/books/chera-bitcoin-ponzi-nist-bitcoind_me.pdf">
+              <img src="assets/images/download-icon.png" class="download-icon">
+            </a>
+          </div>
+        </div>
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            یکی از نگرانی‌های مطرح در مورد بیت‌کوین ادعای پانزی بودن آن است. طبق این استدلال از آنجا که شبکه بیت‌کوین دائما به خرید افراد جدید متکی است، در نهایت وقتی خریدار جدیدی باقی نماند، قیمتش به شدت سقوط خواهد کرد. از این رو مقاله حاضر سیستم‌هایی که ویژگ‌های مشابه طرح‌های پانزی دارند را با بیت‌کوین مقایسه می‌کند.
+          </div>
+        </div>
+
+        <div class="row pb-2">
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="blobs/books/monagheshe-size-block-bitmex-bitcoind_me.pdf">
+              کتاب مناقشه سایز بلاک (تا فصل هشتم)
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            ترجمه کتاب The Blocksize War | تهیه شده توسط <a href="https://twitter.com/bitmex">BitMEX Research</a> - ترجمه: گروه مترجمان
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="blobs/books/monagheshe-size-block-bitmex-bitcoind_me.pdf">
+              <img src="assets/images/download-icon.png" class="download-icon">
+            </a>
+          </div>
+        </div> 
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            بیت‌کوین مجموعه‌ای از قوانین شفاف است و در قالب یک پروتکل و نرم‌افزار اپن سورس ارائه می‌شود، اما تغییر یا ارتقاء این قوانین چگونه انجام می‌پذیرد؟ استخرهای ماین بیت‌کوین با توان هش بالا بلاک‌های زنجیره بیت‌کوین را می‌سازند، توسعه‌دهندگان بیت‌کوین پیشنهادهای فنی ارائه می‌کنند و مسئول نگهداری و ارتقاء نرم‌افزار بیت‌کوین هستند، و در نهایت کاربران بیت‌کوین با اجرای فول‌نود از قوانین شبکه حفاظت می‌کنند. هرکدام از این بازیگران تا کجا برای تغییر قوانین شبکه بیت‌کوین آزادی عمل و اختیار دارند؟ این کتاب برای بررسی دقیق این مسئله یک واقعه بسیار مهم در تاریخ بیت‌کوین را به تفصیل مورد بررسی قرار می‌دهد. حامی ترجمه این کتاب سایت bitcoind.me است.
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <p class="section_header container-fluid">راهنما و خودآموزها</p>
+    </div>
+    <div class="container mb-5" style="width: 75%;">
+      <div class="container">
+        <div class="row pb-1" style="border-bottom:solid 1px #b7b8c7;">
+          <div class="col-4 row_itemDesc">عنوان</div>
+          <div class="col-8 row_itemDesc">توضیحات</div>
+        </div>
+
+        <div class="row py-2">
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="blobs/tuts/raveshhaye-negahdari-az-bitcoin-bitcoind_me.pdf">
+              مروری بر روش‌های امن نگهداری از بیت‌کوین
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            معرفی ابزارهای نگهداری بیت‌کوین، از مبتدی تا پیشرفته | گردآوری: ر.فرد
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="blobs/tuts/raveshhaye-negahdari-az-bitcoin-bitcoind_me.pdf">
+              <img src="assets/images/download-icon.png" class="download-icon">
+            </a>
+          </div>
+        </div>         
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            این خودآموز روش‌های نگهداری امن از بیت‌کوین را قدم به قدم از سطح مبتدی تا پیشرفته توضیح می‌دهد. دقت کنید، برای نگهداری از بیت‌کوین روش‌های متعددی وجود دارد و هرکس باید شخصا با توجه به شعار بیت‌کوین که «بانک خود باشید» نسبت به انتخاب روشی که به نظر او بهترین است اقدام کند. دانش و مقدار دارایی شما باید با روش نگهداری شما از بیت‌کوین‌تان مطابقت داشته باشد. قبل از هر اقدامی باید آموزش ببینید و این موضوعی است که به‌هیچ‌وجه نباید به‌سادگی از کنار آن گذشت.
+          </div>
+        </div>        
+
+        <div class="row py-2">
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="blobs/tuts/gen_bip39_bitcoin_seed_farsi.pdf">
+              روش تولید Seed بیت‌کوین با استفاده از کاغذ و تاس
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            راهنمای تولید Seed  یا همان کلمات بازیابی بیت‌کوین | گردآوری و ترجمه: ر.فرد
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="blobs/tuts/gen_bip39_bitcoin_seed_farsi.pdf">
+              <img src="assets/images/download-icon.png" class="download-icon">
+            </a>
+          </div>
+        </div>         
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            در این راهنما روش ساختن Seed بیت‌کوین که به «کلمات بازیابی» هم معروف است با استفاده از کاغذ و تاس توضیح داده شده است. با استفاده از این روش خلاقانه استفاده‌گنندگان از بیت‌کوین می‌توانند به راحتی و بدون نیاز به اعتماد کردن به هیچ‌گونه نرم‌افزار یا سخت‌افزاری، کلمات Seed خود را تولید کنند. حامی جمع‌آوری و ترجمه این راهنما سایت bitcoind.me است.
+          </div>
+        </div>
+
+        <div class="row pb-2">
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="blobs/tuts/bitcoin_seed_privatekey_wallet.pdf">
+              معرفی Seed بیت‌کوین و نحوه استفاده و نگهداری از آن در کیف‌پول الکترام
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            خودآموز تصویری نحوه ساختن کیف‌پول الکترام با استفاده از کلمات بازیابی و استفاده از قابلیت Cold Storage الکترام
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="blobs/tuts/bitcoin_seed_privatekey_wallet.pdf">
+              <img src="assets/images/download-icon.png" class="download-icon">
+            </a>
+          </div>
+        </div>         
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            در بخش اول این راهنما درباره Seed بیت‌کوین توضیحات تکمیلی ارائه می‌شود. بخش دوم شامل یک خودآموز تصویری است که در آن می‌توانید روش ساختن یک کیف‌پول با استفاده از کلمات بازیابی در والت الکترام و استفاده از این کیف‌پول در حالت Cold Storage را مشاهده کنید.
+          </div>
+        </div>
+
+        <div class="row pb-2"‌>
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="blobs/tuts/bitcoin-privacy-and-whirlpool-qna-farsi.pdf">
+              مقدمه‌ای بر حریم خصوصی بیت‌کوین و سؤال و جواب درباره ویرل‌پولِ سامورایی
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            ترجمه دو مقاله آموزشی سایت <a href="https://bitcoinqna.com">bitcoinqna.com</a> | نوشته: <a href="https://twitter.com/BitcoinQ_A">BitcoinQ_A</a> - گردآوری و ترجمه: ر.فرد
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="blobs/tuts/bitcoin-privacy-and-whirlpool-qna-farsi.pdf">
+              <img src="assets/images/download-icon.png" class="download-icon">
+            </a>
+          </div>
+        </div>
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            ‌این راهنما در بخش مقدمه به بررسی اثر عمومی بودن بلاک‌چین بر حریم خصوصی بیت‌کوین می‌پردازد و در بخش دوم به سوالاتی درباره روش ویرل‌پول برای پیاده‌سازی استاندارد «زیرولینک» و نحوه کار کوین‌جوین پاسخ می‌دهد. حامی جمع‌اوری و ترجمه این راهنما سایت bitcoind.me است.
+          </div>
+        </div>
+
+        <div class="row pb-2"‌>
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="blobs/tuts/shabakeye-tor-farsi-bitcoind_me.pdf">
+              طرز کار شبکه تور و کاربرد آن در کیف‌ پول‌های بیت‌کوین
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            راهنمای نصب مرورگر تور و اتصال کیف پول الکترام به سرورهای عمومی از طریق این شبکه | گردآوری: ر.فرد
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="blobs/tuts/shabakeye-tor-farsi-bitcoind_me.pdf">
+              <img src="assets/images/download-icon.png" class="download-icon">
+            </a>
+          </div>
+        </div>
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            شبکه تور و سرویس‌های onion به کاربران بیت‌کوین کمک می‌کنند به آسانی و از راه دور به فول‌نودهای خود وصل شوند. در این خودآموز طرز کار شبکه تور و این سرویس‌ها، همچنین نحوه نصب مرورگر تور آموزش داده شده است. حامی تهیه این خودآموز سایت bitcoind.me است. 
+          </div>
+        </div>        
+
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <p class="section_header container-fluid">ویدیوهای آموزشی</p>
+    </div>
+
+    <div class="container mb-5 pt-2" style="width: 75%;">
+      <div class="container"> 
+        <div class="row pb-1" style="border-bottom:solid 1px #b7b8c7;">
+          <div class="col-4 row_itemDesc">عنوان</div>
+          <div class="col-8 row_itemDesc">توضیحات</div>
+        </div> 
+        
+        <div class="row py-2">
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="ziya_sadr.html">
+              بیت‌کوین با ضیاء
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            راهنمای تصویری استفاده از نرم‌افزارهای مرتبط با بیت‌کوین | تهیه‌کننده: <a href="https://twitter.com/ziya_sadr">Ziya Sadr</a>
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="ziya_sadr.html">
+              <img src="assets/images/list-icon.png" style="height:18px;">
+            </a>
+          </div>
+        </div>         
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            ضیاء صدر قصد دارد در این ویدیوها نرم‌افزارهای بیت‌کوینی را آموزش دهد، درباره امنیت کیف‌پول‌ها، حریم خصوصی، استفاده از ابزارهای مختلف بیت‌کوینی صحبت کند، و به معرفی و به‌طور کلی به‌روزرسانی در رابطه با اکوسیستم بیت‌کوین بپردازد. این ویدیوها با اجازه صاحب اثر به سایت اضافه شده‌اند.
+          </div>
+        </div>
+
+
+        <div class="row pb-2">
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="bitcoinfordevs.html">
+              بیت‌کوین برای توسعه‌دهندگان
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            بررسی ابعاد فنی پروتکل و پیاده‌سازی بیت‌کوین | تهیه‌کنندگان:  <a href="https://twitter.com/_n1rna">_n1rna</a> و <a href="https://twitter.com/mytechmix">mytechmix</a>
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="bitcoinfordevs.html">
+              <img src="assets/images/list-icon.png" style="height:18px;">
+            </a>
+          </div>
+        </div>         
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            معرفی پروتکل بیت‌کوین و بررسی بخش‌های مختلف پیاده‌سازی Bitcoin Core
+          </div>
+        </div>
+
+        <div class="row pb-2">
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="https://archive.org/details/blue-wallet-mcsaeid">
+              معرفی و آموزش کیف پول بیت‌کوین امن BlueWallet
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            راهنمای تصویری نصب و استفاده از کیف‌پول موبایل بلووالت | تهیه‌کننده: <a href="https://twitter.com/mcsaeid">MC Saeid</a>
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="https://archive.org/details/blue-wallet-mcsaeid">
+              <img src="assets/images/play-icon.png" style="height:20px;">
+            </a>
+          </div>
+        </div>         
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            در این ویدیوی آموزشی روش نصب و استفاده از کیف‌پول موبایل بلووالت را خواهید آموخت. این کیف‌پول اپن-سورس و امن است، (فقط) از بیت‌کوین پشتیبانی می‌کند، بر روی اندروید و iOS قابل نصب، و به تازگی توسط MC Saeid به فارسی ترجمه شده است. این ویدیوی آموزشی با کسب اجازه از صاحب اثر بر روی سایت قرار گرفته است.
+          </div>
+        </div>
+
+        <div class="row pb-2">
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="https://archive.org/details/pruned-bitcoin-node">
+              آموزش راه‌اندازی نود بیت‌کوین | Pruned Bitcoin Node
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            راهنمای تصویری نصب فول‌نود بیت‌کوین | تهیه‌کننده: <a href="https://twitter.com/mcsaeid">MC Saeid</a>
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="https://archive.org/details/pruned-bitcoin-node">
+              <img src="assets/images/play-icon.png" style="height:20px;">
+            </a>
+          </div>
+        </div>         
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            آموزش راه‌اندازی یک فول‌نود «سبک» بیت‌کوین روی سیستم عامل ویندوز ۱۰. در این ویدیوی آموزشی MC Saeid روش اعتبارسنجی نرم‌افزار دانلود شده، روش دانلود و کپی کردن بلاک‌های قدیمی بیت‌کوین را به شما آموزش می‌دهد.
+          </div>
+        </div>
+
+        <div class="row pb-2">
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="https://archive.org/details/electrum-bitcoind">
+              معرفی و آموزش راه‌اندازی سرویس تور | Tor
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            راهنمای تصویری نصب مرورگر تور و تنظیم به‌صورت پراکسی | تهیه‌کننده: <a href="https://twitter.com/mcsaeid">MC Saeid</a>
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="https://archive.org/details/electrum-bitcoind">
+              <img src="assets/images/play-icon.png" style="height:20px;">
+            </a>
+          </div>
+        </div>         
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            در این ویدئو، راجع به تکنولوژی پشت این نرم‌افزار و نحوهٔ اتصال نود بیت‌کوین و کیف پول الکترام به سرویس تور صحبت می‌کنم. اگه به حریم خصوصی اهمیت می‌دید، به‌خصوص اگه نود بیت‌کوین اجرا می‌کنید، خوبه که راجع بهش اطلاعات کسب کنید. این ویدئو جنبهٔ معرفی و آموزشی داره.
+          </div>
+        </div>        
+
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <p class="section_header container-fluid">مطالب مرتبط و دسته‌بندی نشده</p>
+    </div>
+
+    <div class="container mb-5 pt-2" style="width: 75%;">
+      <div class="container"> 
+        <div class="row pb-1" style="border-bottom:solid 1px #b7b8c7;">
+          <div class="col-4 row_itemDesc">عنوان</div>
+          <div class="col-8 row_itemDesc">توضیحات</div>
+        </div> 
+        
+        <div class="row py-2">
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="blobs/misc/negahdari-az-community-farsi-ziya_sadr.pdf">
+              باغ‌های سالم و خرم را صلح‌طلبی می‌خشکاند
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            ترجمه مقاله‌ای در ارتباط با شیوه محافظت از جوامع آنلاین | نوشته: الیزر یودکوسکی - ترجمه: <a href="https://twitter.com/ziya_sadr" style="white-space: nowrap;">Ziya Sadr</a>
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="blobs/misc/negahdari-az-community-farsi-ziya_sadr.pdf">
+              <img src="assets/images/download-icon.png" class="download-icon">
+            </a>
+          </div>
+        </div>         
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            تصویری که نویسنده در این متن ارائه می‌کند تصویری بسیار دقیق از پیشرفت و حرکت جامعه‌های آنلاین (چه بیتکوین باشد و چه نرم‌افزار آزاد و رمزنگاری و غیره) است. هدف من از ترجمه و انتشار این متن، پیشرفت ارتباط و تعامل اعضای کامیونیتی‌ (باغی) است که من آن‌ را سالهاست زیبا و سرگرم کننده می‌بینم. 
+          </div>
+        </div>
+
+      </div>
+    </div>      
+
+    <div class="container mt-5">
+      <p class="section_header container-fluid">مطالب اقتصادی</p>
+    </div>
+    <div class="container mb-5" style="width: 75%;">
+      <div class="container"> 
+        <div class="row pb-1" style="border-bottom:solid 1px #b7b8c7;">
+          <div class="col-4 row_itemDesc">عنوان</div>
+          <div class="col-8 row_itemDesc">توضیحات</div>
+        </div> 
+
+        <!-- <div class="row py-2">
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="https://www.aparat.com/v/gdHQe">
+              مکتب اتریش به زبان ساده با محمد ماشین‌چیان
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            درس گفتارهای اقتصادی دیدار (۱)
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="https://www.aparat.com/v/gdHQe" target="_blank">
+              <img src="assets/images/elink.png" style="height:16px;">
+            </a>
+          </div>
+        </div>         
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            این ویدئو قسمت اول از درس گفتارهای اقتصادی دیدار است که در آن محمد ماشین‌چیان، روزنامه‌نگار و از مدافعان اقتصاد آزاد و مکتب اتریش در ایران در مورد این مکتب توضیحاتی ارائه می‌دهد. حقوق مادی و معنوی این اثر متعلق به محمد ماشین‌چیان است.
+          </div>
+        </div> -->
+
+        <div class="row py-2">
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="https://archive.org/details/hayek-key-ideas-farsi">
+              ایده‌های مهم هایک اقتصاددان مکتب اتریشی
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            معرفی ایده‌های کلیدی فریدریش آوگوست فون هایک، اقتصاددان اتریشی
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="https://archive.org/details/hayek-key-ideas-farsi">
+              <img src="assets/images/play-icon.png" style="height:20px;">
+            </a>
+          </div>
+        </div>         
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            این مجموعه ۵ قسمتی به معرفی ایده‌های کلیدی هایک اقتصاددان مکتب اتریشی و برنده جایزه نوبل اقتصاد، از زبان دان بودرو، استاد اقتصاد دانشگاه جورج میسن می‌پردازد. تمامی حقوق مادی و معنوی این مجموعه متعلق به سایت اکوایران به آدرس ecoiran.com است.
+          </div>
+        </div>        
+
+        <!-- <div class="row pb-2">
+          <div class="col-lg-4 row_itemTitle row_gotoLink">
+            <a href="https://archive.org/details/alefbaye-eghtesad-ravanvajahan">
+              الفبای اقتصاد
+            </a>
+          </div>
+          <div class="col-lg-6 row_itemDesc">
+            مروری بر سیر اندیشه‌های اقتصادی در تاریخ
+          </div>
+          <div class="col-lg-2 row_downloadLink">
+            <a href="https://archive.org/details/alefbaye-eghtesad-ravanvajahan">
+              <img src="assets/images/play-icon.png" style="height:20px;">
+            </a>
+          </div>
+        </div>         
+        <div class="row pb-2">
+          <div class="col row_abstract">
+            الفبای اقتصاد یک مجموعه ویدیوئی است که در ۹ قسمت مروری دارد بر سیر اندیشه‌های اقتصادی در تاریخ. این ویدیوها در کانال یوتوب «روان و جهان» موجود هستند. آدرس این کانال را می‌توانید در صفحه لیست ویدیوها مشاهده کنید.
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+  </div>
+
+  <div class="py-5" style="background-color:#e1dfdf;color:#272838;">
+    <div class="container" style="width: 65%;">
+      <div class="row">
+        <div class="col-11 ir_title" style="text-align: justify;">
+          این پروژه اپن‌سورس، مختص به بیت‌کوین و رایگان است و باقی خواهد ماند. 
+          برای اضافه کردن مطالب تالیف یا ترجمه‌ خود به گیت‌هاب بروید، یا  
+           در توئیتر <a href="https://twitter.com/@bitcoind_me">bitcoind_me@</a>  را منشن کنید، 
+           یا با ایمیل 
+          <span class="email_style">bitcoind_me(-at-) protonmail.com</span> در تماس باشید.
+          <!-- برای گسترش و کامل‌تر شدن مطالب این سایت می‌توانید از راه‌های مختلفی که در <a href="donate.html">این بخش</a> معرفی شده‌اند به ما کمک کنید. -->
+        </div>
+        <div class="col-1 text-right"><a href="https://github.com/bitcoind-me/bitcoind-me"><img src="assets/images/github-512.webp" style="height:45px;"></a></div>
+      </div>
+      <div class="row my-3">
+        <div class="col-11 ir_title" style="text-align: justify;font-size: .9em;">
+          این سایت برای شمارش آمار بازدیدکنندگان از یک سرویس اختصاصی استفاده می‌کند که داده‌ها را بصورت ناشناس ثبت می‌کند و به تنظیمات مرورگر شما در خصوص حریم‌خصوصی احترام می‌گذارد.
+          <br/>
+        </div>
+        <div class="col-1 text-right">&nbsp;</div>
+      </div>      
+    </div>
+  </div>
+
+</body>
+</html>
