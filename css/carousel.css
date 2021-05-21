@@ -22,7 +22,7 @@
     width: 50px;
     height: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    background: url("https://dancortes.dev/images/css-carousel/carousel-arrow-dark.png") 50% 50%/20px no-repeat;
+    background: url("../assets/images/carousel-arrow-dark.png") 50% 50%/20px no-repeat;
 }
 
 .carousel-wrapper-nojs .carousel-item-nojs .arrow.arrow-prev {
@@ -40,7 +40,7 @@
 }
 
 .carousel-wrapper-nojs .carousel-item-nojs.light .arrow {
-    background: url("https://dancortes.dev/images/css-carousel/carousel-arrow-light.png") 50% 50%/20px no-repeat;
+    background: url("../assets/images/carousel-arrow-light.png") 50% 50%/20px no-repeat;
 }
 
 @media (max-width: 500px) {
