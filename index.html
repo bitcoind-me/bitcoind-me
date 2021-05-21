@@ -19,202 +19,10 @@
   <meta property="twitter:image:src" content="https://bitcoind.me/assets/images/share.png">
   <meta property="twitter:domain" content="bitcoind.me">
   <link href="css/bootstrap-4.6.min.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <link href="css/carousel.css" rel="stylesheet">
 
-  <style>
-    body {
-      background-color: #272838;
-      color: #f0f0f0;
-      direction: rtl;
-    }
-
-    /* latin */
-    @font-face {
-      font-family: 'Baloo Bhaina 2';
-      font-style: normal;
-      font-weight: 600;
-      font-display: swap;
-      src: url(assets/fonts/qWcwB6yyq4P9Adr3RtoX1q6ySiQjtiEnm4c.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-
-    @font-face {
-      font-family: 'IranSans';
-      src: url("assets/fonts/IRANSansWeb.woff") format("woff");
-      font-weight: normal;
-    }
-
-    @font-face {
-      font-family: 'IranSans-bold';
-      src: url("assets/fonts/IRANSansWeb_Bold.woff") format("woff");
-      font-weight: bold;
-    }
-
-    .ir_title {
-      font-family: IranSans;
-      font-size: 1em;
-      line-height: 1.7em;
-    }
-
-    .ir_title_bold {
-      font-family: IranSans-bold;
-      font-size: 1.1em;
-      line-height: 1.7em;
-    }
-
-    a:link {
-      color: #005bbd;
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: #005bbd;
-      text-decoration: underline;
-    }
-
-    a:active {
-      color: #005bbd;
-      text-decoration: none;
-    }
-
-    a:visited {
-      color: #005bbd;
-      text-decoration: none;
-    }
-
-    .row_downloadLink>a:link {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    .row_downloadLink>a:hover {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    .row_downloadLink>a:active {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    .row_downloadLink>a:visited {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    .row_gotoLink > a:link{
-      color:#333;
-      text-align: right;
-      text-decoration: none;
-    }
-    .row_gotoLink > a:hover{
-      color:#333;
-      text-align: right;
-      text-decoration: none;
-    }
-    .row_gotoLink > a:active{
-      color:#333;
-      text-align: right;
-      text-decoration: none;
-    }    
-    .row_gotoLink > a:visited{
-      color:#333;
-      text-align: right;
-      text-decoration: none;
-    }
-
-    .row_itemDesc>a:link {
-      color: #1a487a;
-      text-decoration: none;
-    }
-
-    .row_itemDesc>a:hover {
-      color: #6aaff9;
-      text-decoration: none;
-    }
-
-    .row_itemDesc>a:active {
-      color: #6aaff9;
-      text-decoration: none;
-    }
-
-    .row_itemDesc>a:visited {
-      color: #6aaff9;
-      text-decoration: none;
-    }
-
-    .email_style {
-      font-family: 'Courier New', Courier, monospace;
-      font-weight: bold;
-      color: #666;
-    }
-
-    .section_header {
-      color: #ff930f;
-      text-align: right;
-      font-family: IranSans-bold;
-      font-size: 1.9em;
-    }
-
-    .row_itemTitle {
-      color: #fff;
-      text-align: right;
-      font-family: IranSans;
-      font-size: 1.5em;
-      font-weight: bold;
-    }
-
-    .row_itemDesc {
-      margin-top: 3px;
-      text-align: right;
-      font-family: IranSans;
-      font-size: .9em;
-    }
-
-    .row_downloadLink {
-      margin-top: 3px;
-      text-align: center;
-      font-family: IranSans;
-      font-size: .9em;
-    }
-
-    .row_abstract {
-      font-family: IranSans;
-      font-size: .9em;
-      text-align: justify;
-      color: rgb(166, 166, 166);
-      border-bottom: solid 1px #45464a;
-      padding-bottom: 7px;
-    }
-
-    .row_abstract_noborder{
-      font-family: IranSans;
-      font-size:1.1em;
-      text-align: right;
-      color:rgb(140, 140, 140);
-      padding-bottom: 7px;
-    }    
-
-    .regular_text{
-      direction: rtl;
-      text-align: right;
-      font-size: 1.1em;
-
-    }
-
-    .question{
-      font-size:1.3em;
-    }
-    .answer{
-      direction: rtl;
-      text-align: right;
-      font-size:1.05em;  
-    }
-    .linktobook{
-      direction: rtl;
-      text-align: right;
-      font-size:0.9em;
-    }
-  </style>
+  
   <!-- Matomo -->
   <script type="text/javascript">
     var _paq = window._paq = window._paq || [];
@@ -410,42 +218,60 @@
 
   </div>
 
-  <div class="py-2" style="background-color:#fafafa;color:#272838;border-top:solid 1px #393b53;"> 
-    <div class="container mt-5" style="border-bottom:solid 1px #b7b8c7; width:80%;">
+  
+  <div style="background-color:#fafafa;color:#272838;border-top:solid 1px #393b53;">
+    <div class="container mt-4" style="border-bottom:solid 1px #b7b8c7; width:80%;display: none;">
       <p class="section_header container-fluid">معرفی مقاله</p>
-    </div>
-    <div class="container mb-5" style="width: 75%;">
-    <div class="container">
-      <!-- <div class="row pb-1" style="border-bottom:solid 1px #b7b8c7;">
-        <div class="col row_itemDesc">عنوان</div>
-        <div class="col-8 row_itemDesc">توضیحات</div>
-      </div> -->
-      <div class="row container">
-        <div class="col-lg-8" style="padding:0px">
-          <div class="row py-2">
-            <div class="mt-5 col-lg row_itemTitle row_gotoLink">
-              <a href="blobs/tuts/raveshhaye-negahdari-az-bitcoin-bitcoind_me.pdf">
-                مروری بر روش‌های امن نگهداری از بیت‌کوین
-              </a>
-            </div>
-            <!-- <div class="col-lg-6 row_itemDesc">
-              گوینده: <a href="https://twitter.com/coinlet_hodler">Coinlet Hodler</a><br/>
-              نوشته: <a href="https://twitter.com/gladstein">Alex Gladstein</a> و دیگران  - ترجمه: الف.آزاد و دیگران
-            </div> -->
-          </div>
-          <div class="mt-3 ml-3 row_abstract_noborder">
-            این خودآموز روش‌های نگهداری امن از بیت‌کوین را قدم به قدم از سطح مبتدی تا پیشرفته توضیح می‌دهد. دقت کنید، برای نگهداری از بیت‌کوین روش‌های متعددی وجود دارد و هرکس باید شخصا با توجه به شعار بیت‌کوین که «بانک خود باشید» نسبت به انتخاب روشی که به نظر او بهترین است اقدام کند. دانش و مقدار دارایی شما باید با روش نگهداری شما از بیت‌کوین‌تان مطابقت داشته باشد. قبل از هر اقدامی باید آموزش ببینید و این موضوعی است که به‌هیچ‌وجه نباید به‌سادگی از کنار آن گذشت. 
-          </div>
+    </div>    
+    <div class="container py-2" style="width:90%;">
+      <div class="carousel-wrapper-nojs" style="height: 600px;">
+        <span class="hidden-target" id="target-item-1"></span>
+        <span class="hidden-target" id="target-item-2"></span>
+        <span class="hidden-target" id="target-item-3"></span>
+        <span class="hidden-target" id="target-item-4"></span>
+        <span class="hidden-target" id="target-item-5"></span>
+        <div class="carousel-item-nojs item-1 light"
+        style="background-color:#999 !important;background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(assets/images/featured/audio_book.jpg) no-repeat; background-position-y: 170px; background-size: calc(100%) calc(100%);">
+        <h2 class="row_itemTitle"><img src="assets/images/bookmark_red.png" style="height:30px;"> <a href="https://archive.org/details/ketabe-koochake-bitcoin-audio-book">نسخه صوتی کتاب کوچک بیت‌کوین (فارسی)</a></h2>
+        <p class="row_abstract_noborder pt-1" style="color:whitesmoke;font-size:1.1em;">نسخه صوتی کتاب The little bitcoin Book نوشته الکس گلداشتاین و دیگران در پاییز سال ۱۳۹۹ توسط الف.آزاد و دیگران به فارسی ترجمه و در سایت bitcoind.me برای استفاده علاقه‌مندان به بیت‌کوین قرار گرفته است. نسخه صوتی این کتاب توسط coinlet holder تهیه و برای استفاده رایگان عموم منتشر شده است. تمامی حقوق مادی و معنوی این اثر متعلق به پدیدآورندگان آن است.</p>
+          <a class="arrow arrow-prev" href="#target-item-5"></a>
+          <a class="arrow arrow-next" href="#target-item-2"></a>
         </div>
-        <div class="col-lg-4 text-left">
-          <a href="blobs/tuts/raveshhaye-negahdari-az-bitcoin-bitcoind_me.pdf">
-            <img class="my-4" src="assets/images/featured/raveshhaye-negahdari-bitcoin.png" style="width:280px;border:solid 1px #333;"/>
-          </a>
+        <div class="carousel-item-nojs item-2 light"
+        style="background-color:#999 !important;background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(assets/images/featured/inventing_bitcoin.jpg) no-repeat; background-position-y: 170px; background-size: calc(100%) calc(100%);">
+        <h2 class="row_itemTitle"><img src="assets/images/bookmark_red.png" style="height:30px;"> <a href="blobs/books/ekhterae-bitcoin-farsi-nodrunner.pdf">کتاب اختراع بیت‌کوین (ترجمه فارسی)</a></h2>
+        <p class="row_abstract_noborder pt-1" style="color:whitesmoke;font-size:1.1em;">بیشتر افراد، اولین باری که از بیت‌کوین می‌شنوند چیزی از آن نمی‌فهمند. آیا بیت‌کوین پول جادویی اینترنتی است؟ از کجا آمده؟ کنترل آن دست چه کسی است؟ چرا انقدر مهم است؟ تمام چیزهایی که کنار هم جمع شده‌اند تا بیت‌کوین را بسازند اهمیت زیادی دارد و نویسنده در این کتاب تلاش می‌کند دانش خود را به زبانی بسیار ساده و قابل درک به شما انتقال دهد.</p>
+          <a class="arrow arrow-prev" href="#target-item-1"></a>
+          <a class="arrow arrow-next" href="#target-item-3"></a>
         </div>
+
+        <div class="carousel-item-nojs item-3 light"
+          style="background-color:#999 !important;background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(assets/images/featured/can_governments_stop_bitcoin.jpg) no-repeat; background-position-y: 170px; background-size: calc(100%) calc(100%);">
+          <h2 class="row_itemTitle"><img src="assets/images/bookmark_red.png" style="height:30px;"> <a href="blobs/books/dolatha-va-bitcoin_estammadDoyom.pdf">آیا دولت‌ها می‌توانند بیت‌کوین را متوقف کنند؟ (ترجمه فارسی)</a></h2>
+          <p class="row_abstract_noborder pt-1" style="color:whitesmoke;font-size:1.1em;">تعداد کاربران جهانی بیت کوین از ۱۰۰ میلیون نفر گذشته است و امنیت شبکه، تعداد برنامه نویسان، و ویژگی های جدیدی که برایش طراحی می کنند به اندازه بی سابقه‌ای رسیده است. ده‌ها شرکت بخشی از ترازنامه مالی خود را به بیتکوین اختصاص داده اند. این موفقیت در سراسر جهان به این معنی نیست که هیچکس برای متوقف کردن آن تلاشی نکرده است. این مقاله روش‌هایی که برای متوقف کردن بیت‌کوین به‌کار گرفته شده است را بررسی می‌کند.</p>
+          <a class="arrow arrow-prev" href="#target-item-2"></a>
+          <a class="arrow arrow-next" href="#target-item-4"></a>
+        </div>
+
+        <div class="carousel-item-nojs item-4 light"
+          style="background-color:#999 !important;background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(assets/images/featured/bitcoin-vault.jpg) no-repeat; background-position-y: 170px; background-size: calc(100%) calc(100%);">
+          <h2 class="row_itemTitle"><img src="assets/images/bookmark_red.png" style="height:30px;"> <a href="blobs/tuts/raveshhaye-negahdari-az-bitcoin-bitcoind_me.pdf">مروری بر روش‌های امن نگهداری از بیت‌کوین (خودآموز)</a></h2>
+          <p class="row_abstract_noborder pt-1" style="color:whitesmoke;font-size:1.1em;">این خودآموز روش‌های نگهداری امن از بیت‌کوین را قدم به قدم از سطح مبتدی تا پیشرفته توضیح می‌دهد. دقت کنید، برای نگهداری از بیت‌کوین روش‌های متعددی وجود دارد و هرکس باید شخصا با توجه به شعار بیت‌کوین که «بانک خود باشید» نسبت به انتخاب روشی که به نظر او بهترین است اقدام کند. دانش و مقدار دارایی شما باید با روش نگهداری شما از بیت‌کوین‌تان مطابقت داشته باشد. قبل از هر اقدامی باید آموزش ببینید.</p>
+          <a class="arrow arrow-prev" href="#target-item-3"></a>
+          <a class="arrow arrow-next" href="#target-item-5"></a>
+        </div>
+
+        <div class="carousel-item-nojs item-5 light"
+          style="background-color:#999 !important;background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(assets/images/featured/library.jpg) no-repeat; background-position-y: 170px; background-size: calc(100%) calc(100%);">
+          <h2 class="row_itemTitle"><img src="assets/images/bookmark_red.png" style="height:30px;"> <a href="library.html">کتابخانه سایت منابع فارسی بیت‌کوین</a></h2>
+          <p class="row_abstract_noborder pt-1" style="color:whitesmoke;font-size:1.1em;">در کتابخانه سایت منابع فارسی بیت‌کوین می‌توانید کتاب‌ها، مقالات، خودآموزها و بطور کلی منابع آموزشی و کاربردی معتبر و برگزیده در حوزه بیت‌کوین، اقتصاد، و حریم خصوصی که توسط فعالان جامعه فارسی‌زبان بیت‌کوین تالیف و ترجمه شده‌اند را به‌صورت رایگان دریافت و مطالعه کنید.</p>
+          <a class="arrow arrow-prev" href="#target-item-4"></a>
+          <a class="arrow arrow-next" href="#target-item-1"></a>
+        </div>        
+      
       </div>
     </div>
   </div>
-  </div>  
 
   <div class="py-5" style="background-color:#272838;border-top:solid 1px #666;">
     <div class="container text-center">
