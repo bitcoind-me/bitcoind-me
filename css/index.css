@@ -100,7 +100,7 @@ body {
   }
 
   .row_itemDesc>a:link {
-    color: #1a487a;
+    color: #6aaff9;
     text-decoration: none;
   }
 
@@ -141,6 +141,26 @@ body {
     text-decoration: none;
   }
 
+  .row_itemTitle_dark>a:link {
+    color: #f0f0f0;
+    text-decoration: none;
+  }
+
+  .row_itemTitle_dark>a:hover {
+    color: #f0f0f0;
+    text-decoration: none;
+  }
+
+  .row_itemTitle_dark>a:active {
+    color: #f0f0f0;
+    text-decoration: none;
+  }
+
+  .row_itemTitle_dark>a:visited {
+    color: #f0f0f0;
+    text-decoration: none;
+  }
+
   .email_style {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
@@ -159,6 +179,14 @@ body {
     text-align: right;
     font-family: IranSans;
     font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .row_itemTitle_dark {
+    color: #f0f0f0;
+    text-align: right;
+    font-family: IranSans;
+    font-size: 1em;
     font-weight: bold;
   }
 
@@ -187,7 +215,7 @@ body {
 
   .row_abstract_noborder{
     font-family: IranSans;
-    font-size:1.1em;
+    font-size:.9em;
     text-align: right;
     color:rgb(140, 140, 140);
     padding-bottom: 7px;
