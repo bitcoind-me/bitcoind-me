@@ -78,6 +78,28 @@ body {
     text-decoration: none;
   }
 
+  
+
+  .row_twitterLink>a:link {
+    color: #ccc;
+    text-decoration: none;
+  }
+
+  .row_twitterLink>a:hover {
+    color: #ccc;
+    text-decoration: none;
+  }
+
+  .row_twitterLink>a:active {
+    color: #ccc;
+    text-decoration: none;
+  }
+
+  .row_twitterLink>a:visited {
+    color: #ccc;
+    text-decoration: none;
+  }
+
   .row_gotoLink > a:link{
     color:#333;
     text-align: right;
@@ -118,8 +140,6 @@ body {
     color: #6aaff9;
     text-decoration: none;
   }
-
-  
 
   .row_itemTitle>a:link {
     color: #fdfdfd;
