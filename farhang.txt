@@ -35,11 +35,11 @@ Bitcoin
 bitcoin
 Bitcoin Address
 Bitcoin ATM
-Bitcoin ATM
 Bitcoin Client
 Bitcoin Core
 Bitcoin Implementations
 Bitcoin Improvement Proposal (BIP)
+Bitcoin Independence Day
 Bitcoin Law
 Bitcoin Network
 Bitcoin Node
@@ -414,31 +414,3 @@ xPub (Extended Public Key)
 yPub (Extended Public Key)
 Zero-Confirmation Transaction
 zPub (Extended Public Key)
-
-
-
-
-
-
-
-Lightning
-====================================
-Atomic Multi-Path Payments (AMP)
-Basis of Lightning Technology (BOLT)
-Eltoo
-Hashed Time Locked Contract (HTLC)
-Inbound Liquidity
-Lightning Implementations
-Lightning Invoice
-Lightning Network
-Lightning Network Penalty
-Lightning Node
-Lightning Wallet
-LNURL
-Micro Payments
-Millisatoshi (msat)
-Multipath Payments (MPP)
-Outbound Liquidity
-Payment Channel
-Penalty Transaction
-Routing
