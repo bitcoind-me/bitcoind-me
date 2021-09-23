@@ -1,0 +1,444 @@
+51 Percent Attack
+Adam Back
+Adaptor Signature
+Address
+Air gap
+All-Time High (ATH)
+Altcoin
+Anonymous
+Anti-Money Laundering (AML)
+Application-Specific Integrated Circuit (ASIC)
+Archival Node
+ASIC Miner
+Atomic Swap
+Austrian School Of Economics
+B-money
+Backwards Compatibility
+Backwards Incompatibility
+Balance
+Bancor
+Base58
+Base58check
+Base64
+Batching
+Bech32
+Bech32m
+Berkeley DB
+Best block chain
+Better Hash
+Big Brother
+Binary
+BIP39 Seed Phrase
+Bit
+Bit Gold
+Bitcoin
+bitcoin
+Bitcoin Address
+Bitcoin ATM
+Bitcoin ATM
+Bitcoin Client
+Bitcoin Core
+Bitcoin Implementations
+Bitcoin Improvement Proposal (BIP)
+Bitcoin Law
+Bitcoin Network
+Bitcoin Node
+Bitcoin Pizza Day
+Bitcoin Script
+Bitcoin Standard
+Bitcoin White paper (BTC Whitepaper)
+Bitcoin-Qt
+Bitcoiner
+Bitcointalk Forum
+BitTorrent Protocol
+Black Swan Theory
+Block
+Block Explorer
+Block Header
+Block Height
+Block Reward
+Block Weight
+Blockchain
+Blockchain Technology
+Blocks-First Sync
+Blockstream Satellite
+Bloom filter
+Bootstrapping
+Broadcast
+BTC
+Bug Bounty
+Byte
+Byzantine Fault Tolerance
+Byzantine Generals Problem
+Candidate Block
+Cantillon Effect
+Capital Controls
+Cash
+Censorship Resistance
+Central Authority
+Centralized
+Certificate Authority (CA)
+Chain 
+Chain Analysis
+Chain Reorganization (Reorg)
+Change
+Change address
+Change output
+Checksum
+Child-Pays-for-Parent (CPFP)
+Circular Economy
+Closed Source
+Co-Signer
+Coin
+Coin Mixer (Mixing Service)
+Coin Mixing
+Coin Selection
+Coinbase
+Coinbase Transaction
+CoinJoin
+CoinSwap
+Cold Storage / Cold Wallet
+Collateral
+Command-Line Interface (CLI)
+Common Input Ownership Heuristic
+Communication Protocol
+Confirmation
+Consensus
+Consensus Rules
+Contributor
+Counterparty
+CPU Miner
+Crypto Anarchism
+Cryptocurrency
+Cryptographic Hash Function
+Cryptography
+Cryptosystem
+Cumulative Proof of Work
+Currency
+Custodial
+Custodian
+Cypherpunk
+Dandelion
+David Chaum
+Debasement
+Decentralized
+Decimal
+Decoding
+Deflation
+Denial of Service (DoS) Attack
+Deposit
+DER Format
+Derivation Paths
+Derivatives
+Difficulty
+Difficulty Adjustment
+Difficulty Retargeting
+DigiCash
+Digital Asset
+Digital Signature
+Discreet Log Contract (DLC)
+Discrete Log Problem (DLP)
+Distributed
+Distributed Consensus
+Distributed Denial of Service (DDoS) Attack
+Distributed Ledger
+Divisibility
+DNS seed
+Dollar Standard
+Don’t Trust, Verify
+Double Spend
+Dust
+Dust Attack
+DYOR (Do Your Own Research)
+eCash
+Eclipse Attack
+Electronic Cash
+Electrum Wallet
+Elliptic-Curve Digital Signature Algorithm (ECDSA)
+Encoding
+Encryption
+Encryption Algorithm
+End-to-End (E2E) Encryption
+Entropy
+Equilibrium
+Erlay
+Escrow
+Escrow Contract
+Exchange
+Executive Order 6102
+Extended Private Key (xprv)
+Extended Public Key (xpub)
+Faucet
+Fear of Missing Out (FOMO)
+Fiat Currency
+Fork
+Forward Compatibility
+Fractional Reserve Banking
+Full Node
+Fungibility
+Game Theory
+Generator Point
+Genesis Block
+Git
+Gold Standard
+Gossip Protocol
+goTenna Mesh
+Graphical User Interface (GUI)
+Graphics Processing Unit (GPU)
+Gresham’s Law
+Hacker
+Hal Finney
+Halving (The Halvening)
+Hard Cap
+Hard Fork
+Hard Money
+Hardware Wallet
+Hash
+Hash Function
+Hash per Second
+Hash Power
+Hash Rate
+Hashcash
+HD Wallet Seed
+Hexadecimal
+Hexadecimal (Hex)
+Hierarchical Deterministic (HD) Wallet
+HODL
+Hosted
+Hot Wallet
+Hyperbitcoinization
+Hyperinflation
+Immutability
+Inflation
+Initial Block Download (IBD)
+Input Sequence (nSequence)
+IP address
+KYC (Know Your Customer)
+Layer 2
+Ledger
+Level DB
+Light Client
+Lightning Network
+Liquidity
+Little-endian
+Locktime (nLockTime)
+M-of-N Multisig
+Mailing List
+Mainnet
+Maintainer
+Malleability
+Market Capitalization
+Maximum Block Size
+Medium of Exchange
+Mempool
+Merchant
+Merge
+Merkle Root
+Merkle Tree
+Mesh Network
+Miner
+Miner-Activated Soft Fork (MASF)
+Mining
+Mining Death Spiral
+Mining Pool
+Mnemonic words
+Mobile Wallet
+Moscow Time
+Mt. Gox
+Multi-Signature (multisig)
+MuSig
+Nakamoto Consensus
+Network
+Network difficulty
+Network Effect
+Neutrino
+New York Agreement (NYA)
+Nick Szabo
+Node
+Non-Custodial
+Nonce
+Not Your Keys, Not Your Coins
+Not Your Node, Not Your Rules
+Off-Chain
+On-Chain
+OP_RETURN Transaction
+Opcode
+Open Source
+Operations Security (OPSEC)
+Orphan Block
+Orphan Transactions
+Orwellian
+OTC Desk
+P2P
+Paper Wallet
+Parallel Economy
+Partially Signed Bitcoin Transaction (PSBT)
+Passphrase
+Pay to End Point (P2EP)
+Pay-to-Public-Key (P2PK)
+Pay-to-Public-Key-Hash (P2PKH)
+Pay-to-Script-Hash (P2SH)
+Pay-to-Taproot (P2TR)
+Pay-to-Witness-Public-Key-Hash (P2WPKH)
+Pay-to-Witness-Script-Hash (P2WSH)
+PayJoin
+Payment Channel
+Payment Processor
+PayNym
+Peer
+Peer-to-Peer (P2P)
+Peg
+Phishing Attack
+Point Time Locked Contract (PTLC)
+Precoiner
+Preimage
+Privacy
+Private Key
+Proof of Keys
+Proof-of-Work (PoW)
+Protocol
+Pruned Node
+Pseudonym
+Pseudonymous
+Public Key
+Public Key Cryptography
+Pull Request (PR)
+QR Code
+Quantitative Easing (QE)
+Reckless
+Recovery Seed Phrase
+Redeem Script
+Regtest
+Remailer
+Replace by Fee (RBF)
+Round Amounts Heuristic
+Salability Across Scales
+Salability Across Space
+Salability Across Time
+Samourai Wallet
+Satoshi Nakamoto
+Satoshis (Sats)
+Satoshis per byte
+Satoshis per vbyte
+Scalability
+Scarcity
+Schelling Point
+Schnorr Signature
+Script
+Script Type Heuristic
+Script Witness
+ScriptPubKey
+ScriptSig
+Secp256k1
+Secure Hash Algorithm (SHA)
+Seed
+Seed Phrase
+Segregated Witness (SegWit)
+Self Custody
+Self Hosted
+SHA-256
+Shitcoin
+Shitcoiner
+Sidechain
+Sighash Flag
+Signature
+Signet
+Silk Road
+Simplified Payment Verification (SPV)
+Single-Signature (singlesig)
+Smart Contract
+Social Enginneering
+Soft Cap
+Soft Fork
+Sound Money
+Source Code
+Stale Block
+Stock-to-Flow (S2F)
+Store of Value
+Stratum Protocol
+Supply Cap
+Surveillance
+Sybil Attack
+Taint
+Tamper Evident
+Taproot
+Tapscript
+tBTC
+Testnet
+The Blocksize War
+The Halving (Or “Halvening”)
+Time Preference
+Time Preference
+Timelock
+Timestamp
+Tor Network
+Transaction
+Transaction Fee (Miner fee)
+Transaction Graph
+Transaction ID (txid)
+Transaction Input (TxIn)
+Transaction Malleability
+Transaction Output (TxOut)
+Transactions per Second
+Trust-Minimized
+Trustless
+Unconfirmed
+Unconfirmed Transaction
+Unit Bias
+Unit of Account
+Unix Timestamp
+Unspent Transaction Output (UTXO)
+User-Activated Soft Fork (UASF)
+Utreexo
+UTXO
+UTXO Set
+Vanity Address
+Vault
+vByte
+Virgin Bitcoin
+Volatility
+Wallet
+Wallet Import Format (WIF)
+Wassabi Wallet
+Watch-Only Address
+Watch-Only Wallet
+Wei Dai
+Whirlpool
+Whitepaper
+Witness
+Witness Script
+Wrapped SegWit
+wtxid
+XBT
+xPub (Extended Public Key)
+yPub (Extended Public Key)
+Zero-Confirmation Transaction
+zPub (Extended Public Key)
+
+
+
+
+
+
+
+Lightning
+====================================
+Atomic Multi-Path Payments (AMP)
+Basis of Lightning Technology (BOLT)
+Eltoo
+Hashed Time Locked Contract (HTLC)
+Inbound Liquidity
+Lightning Implementations
+Lightning Invoice
+Lightning Network
+Lightning Network Penalty
+Lightning Node
+Lightning Wallet
+LNURL
+Micro Payments
+Millisatoshi (msat)
+Multipath Payments (MPP)
+Outbound Liquidity
+Payment Channel
+Penalty Transaction
+Routing
