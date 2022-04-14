@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        ماشین حساب بیت‌کوین
+    </title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: black;
+        }
+
+        .container {
+            width: auto;
+            margin: 20px;
+        }
+
+        .calc-body {
+            width: 350px;
+            margin: auto;
+            min-height: 400px;
+            border: solid 1px #3A4655;
+            box-shadow: 0 8px 50px -7px black;
+        }
+
+        .calc-screen {
+            background: #3A4655;
+            width: 100%;
+            height: 170px;
+            padding: 10px;
+        }
+
+        .calc-header {
+            background: #3A4655;
+            width: 100%;
+            height: 30px;
+            padding: 10px;
+            text-align: right;
+            font-size: 20px;
+        }
+
+        .calc-operation {
+            text-align: center;
+            color: #dee3eb;
+            font-size: 35px;
+            padding-bottom: 10px;
+            border-bottom: dotted 1px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .calc-typed {
+            margin-top: 18px;
+            font-size: 35px;
+            text-align: center;
+            color: #E0B612;
+        }
+
+        .calc-lastrow {
+            font-size: 1.1em;
+            font-weight: bold;
+            background-color: #2e3844;
+            color: #fff;
+            padding: 15px;
+            text-align: right;
+        }
+
+        .button {
+            width: 33.5%;
+            background: #425062;
+            color: #fff;
+            padding-top: 35px;
+            padding-bottom: 35px;
+            display: inline-block;
+            font-size: 28px;
+            text-align: center;
+            vertical-align: middle;
+            margin-right: -4px;
+            border-right: solid 2px #3C4857;
+            border-bottom: solid 2px #3C4857;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .button.l {
+            color: #AEB3BA;
+            background: #404D5E;
+        }
+
+        .button.r {
+            color: #969aa0;
+        }
+
+        .button.c {
+            color: #db2c2c;
+            background: #404D5E;
+        }
+
+        .button:hover {
+            cursor: pointer;
+        }
+
+        .button.c:hover {
+            cursor: pointer;
+        }
+
+        .button.l:hover {
+            cursor: pointer;
+        }
+
+        html {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #2d3436;
+            background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calc-body">
+            <div id="irt_val" style="display:none;" class="calc-operation">0</div>
+            <div class="calc-screen">
+                <div style="display: inline-flexbox;color:#fff;">تومان</div>
+                <div id="irt_val_show" class="calc-operation">0</div>
+                <div id="converted_val" class="calc-typed">0</div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button l" onclick="calculate_sat()"> SAT </div>
+                <div class="button l" onclick="calculate_btc()"> BTC </div>
+                <div class="button c" onclick="clear_calc()"> C </div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button" onclick="push_char('7')"> 7 </div>
+                <div class="button" onclick="push_char('8')"> 8 </div>
+                <div class="button" onclick="push_char('9')"> 9 </div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button" onclick="push_char('4')"> 4 </div>
+                <div class="button" onclick="push_char('5')"> 5 </div>
+                <div class="button" onclick="push_char('6')"> 6 </div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button" onclick="push_char('1')"> 1 </div>
+                <div class="button" onclick="push_char('2')"> 2 </div>
+                <div class="button" onclick="push_char('3')"> 3 </div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button r" onclick="window.location.reload(true)"> R </div>
+                <div class="button" onclick="push_char('0')"> 0 </div>
+                <div class="button" onclick="push_char('000')"> 000 </div>
+            </div>
+            <div class="calc-lastrow">
+                <div style="opacity:.7;">
+                    <span style="color:#ffa233;">bitcoind</span><span style="color:#fff;">.me</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var _btcirt = 1200000000
+        var _pristine = true
+        init_calc()
+        function init_calc() {
+            document.getElementById('irt_val').textContent = _btcirt / 1000
+            document.getElementById('irt_val_show').textContent = parseFloat(parseInt(document.getElementById('irt_val').textContent)).toLocaleString('en-US')
+            document.getElementById('converted_val').textContent = '100,000 sat'
+        }
+        function clear_calc() {
+            document.getElementById('irt_val').textContent = '0'
+            document.getElementById('irt_val_show').textContent = '0'
+            document.getElementById('converted_val').textContent = '0'
+            _pristine = true
+        }
+        function push_char(char) {
+            if (_pristine == true && (char == '0' || char == '000')) {
+                return
+            } else if (_pristine == true) {
+                document.getElementById('irt_val').textContent = ''
+                document.getElementById('irt_val_show').textContent = ''
+            }
+            document.getElementById('irt_val').textContent = document.getElementById('irt_val').textContent + char
+            document.getElementById('irt_val_show').textContent = parseInt(document.getElementById('irt_val').textContent).toLocaleString('en-US')
+            calculate_sat()
+            _pristine = false
+        }
+        function calculate_sat() {
+            var _sats_total = parseFloat(parseInt(document.getElementById('irt_val').textContent) / _btcirt) * 100000000
+            document.getElementById('converted_val').textContent = parseInt(_sats_total.toFixed(0)).toLocaleString('en-US') + ' sat'
+        }
+        function calculate_btc() {
+            var _btc_total = parseFloat(document.getElementById('irt_val').textContent / _btcirt)
+            document.getElementById('converted_val').textContent = _btc_total.toFixed(8) + ' btc'
+        }
+    </script>
+</body>
+
+</html>
