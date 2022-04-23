@@ -1,0 +1,71 @@
+.hamburger, .close {
+    border: none;
+    cursor: pointer;
+    /* position absolute position the icons relative to the body because they have no position relative parents*/
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    z-index: 10;
+  }
+  
+  .hamburger {
+    background: #272838;
+  }
+  
+  .close {
+    background: #272838;
+  }
+  
+  .hamburger img, .close img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .navbar {
+    position: absolute;
+    /* a higher z-index put navbar above hamburger */
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    /* basic menu styling*/
+    list-style: none;
+    background: #272838;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* animate slide up/down */
+    transform: translateY(-100%);
+    transition: transform 0.2s ease;
+  }
+  
+  /* :target is called when its anchor id #navbar is called by clicking on the hamburger which has href="#navbar" */
+  
+  .navbar:target {
+    /* show navbar */
+    transform: translateY(0);
+  }
+  
+  li a {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    color: #f9f9f9;
+    font-weight: bold;
+    font-size: 1.2rem;
+    /* remove default underline and add our own with padding and border bottom */
+    text-decoration: none;
+    /* border-bottom: 1px solid black; */
+    padding-bottom: 0.5rem;
+  }
+  
+  li a:hover, li a:focus {
+    /* show border bottom */
+    /* border-bottom: 1px solid white; */
+    text-decoration: none;
+    color: #f9f9f9;
+  }

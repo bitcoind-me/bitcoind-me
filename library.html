@@ -18,7 +18,8 @@
   <meta property="twitter:image:src" content="https://bitcoind.me/assets/images/bitcoind_me_library_dark.png">
   <meta property="twitter:domain" content="bitcoind.me">
   <link href="css/bootstrap-4.6.min.css" rel="stylesheet">
-  <link href="css/hamburgermenu.css" rel="stylesheet">
+  <!-- <link href="css/hamburgermenu.css" rel="stylesheet"> -->
+  <link href="css/hamburgermenu-vertical.css" rel="stylesheet">
 
   <style>
     body{
@@ -229,6 +230,20 @@
       color: #f0f0f0;
       text-decoration: none;
     }
+
+    .hamburgermenuitem a{
+      font-family:IranSans-bold;
+      font-size:1.4em;
+      color:#f4f4f4;
+      text-decoration: none;
+    }
+
+    .hamburgermenuitem a:hover{
+      font-family:IranSans-bold;
+      font-size:1.4em;
+      color:#f4f4f4;
+      text-decoration: none;
+    }
   </style>
   <!-- Matomo -->
   <script type="text/javascript">
@@ -248,7 +263,20 @@
 </head>
 <body>
 
-  <nav class="menu">
+  <ul class="navbar" id="navbar">
+    <li class="hamburgermenuitem" style="width:300px;"><div class="row"><div class="col-3 text-right"><a href="https://bitcoind.me/index.html"><img src="assets/images/house-building.png" style="height:45px;vertical-align: middle;"></a></div><div class="col-9 pt-2 text-right"><a href="https://bitcoind.me/library.html">صفحه اصلی</a></div></div></li>
+    <li class="hamburgermenuitem" style="width:300px;"><div class="row"><div class="col-3 text-right"><a href="https://farhang.bitcoind.me"><img src="assets/images/open-book_1f4d6.png" style="height:45px;"></a></div><div class="col-9 pt-2 text-right"><a href="https://farhang.bitcoind.me">فرهنگ بیت‌کوین</a></div></div></li>
+    <li class="hamburgermenuitem" style="width:300px;"><div class="row"><div class="col-3 text-right"><a href="https://anchor.fm/bitcoind-me"><img src="assets/images/studio-microphone.png" style="height:45px;"></a></div><div class="col-9 pt-2 text-right"><a href="https://anchor.fm/bitcoind-me">پادکست</a></div></div></li>
+    <li class="hamburgermenuitem" style="width:300px;"><div class="row"><div class="col-3 text-right"><a href="https://calc.bitcoind.me"><img src="assets/images/old-school-calculator.png" style="height:45px;"></a></div><div class="col-9 pt-2 text-right"><a href="https://calc.bitcoind.me">ماشین‌حساب بیت‌کوین</a></div></div></li>
+    <a class="close" href="#">
+      <img src="assets/images/ham-close.svg" alt="close">
+    </a>
+  </ul>
+  <a class="hamburger" href="#navbar">
+    <img src="assets/images/ham-light.png" alt="menu">
+  </a>
+
+  <!-- <nav class="menu">
     <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
     <label class="menu-open-button" for="menu-open">
       <span class="hamburger hamburger-1"></span>
@@ -258,8 +286,7 @@
     
     <a href="index.html" class="menu-item"><img src="assets/images/house-building.png" style="height:53px;padding-bottom:8px;"></a>
     <a href="https://anchor.fm/bitcoind-me" class="menu-item"><img src="assets/images/studio-microphone.png" style="height:42px;"></a>
-    <!-- <a href="hemayat.html" class="menu-item"><img src="assets/images/wrapped-gift.png" style="height:48px;"></a> -->
-  </nav>
+  </nav> -->
 
   <div class="container mb-5" style="direction: rtl;text-align: right;padding-top:100px;">
 		<p class="text-center" style="font-size:3.9em;font-family: 'Baloo Bhaina 2', cursive;">

@@ -260,3 +260,17 @@ body {
     text-align: right;
     font-size:0.9em;
   }
+
+  .hamburgermenuitem a{
+    font-family:IranSans-bold;
+    font-size:1.4em;
+    color:#f4f4f4;
+    text-decoration: none;
+  }
+
+  .hamburgermenuitem a:hover{
+    font-family:IranSans-bold;
+    font-size:1.4em;
+    color:#f4f4f4;
+    text-decoration: none;
+  }
