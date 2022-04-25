@@ -261,6 +261,16 @@ body {
     font-size:0.9em;
   }
 
+  .blex-nav-wrapper {
+    left: 0;
+    right: 0;
+    top:0;
+    position: fixed;
+    background-color: #272838;
+    box-shadow: #1b1b1b 0 0 20px;
+    z-index: 5;
+  }
+
   .hamburgermenuitem a{
     font-family:IranSans-bold;
     font-size:1.4em;
