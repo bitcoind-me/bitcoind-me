@@ -251,7 +251,20 @@ a:visited {
   text-align: right;
   color:rgb(140, 140, 140);
   padding-bottom: 7px;
-}    
+}
+
+.pdf_icon{
+  width:24px;
+}
+
+.mobile_icon{
+  width:28px;
+  padding-top:-2px;
+}
+
+.speaker_icon{
+  width:27px;
+}
 
 .regular_text{
   direction: rtl;
