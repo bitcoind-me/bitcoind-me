@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <title>Cypherpunks write code | سایفرپانک‌ها کُد می‌نویسند</title>
+  <meta http-equiv="onion-location" content="http://bitcoin6djvpbydmvqhdarbdb2oaicnp6pbu2kwpcfwpcy2h4vurvjad.onion" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="معرفی کتاب‌ها، مقالات، خودآموزها و به‌طور کلی معرفی منابع آموزشی معتبر حوزه بیت‌کوین، اقتصاد و حریم خصوصی" />
+  <meta property="og:image" content="https://bitcoind.me/assets/images/bitcoind_me_library_dark.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="420" />
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:site" content="bitcoind.me">
+  <meta property="twitter:title" content="bitcoind.me | ویدئو">
+  <meta property="twitter:description" content="معرفی کتاب‌ها، مقالات، خودآموزها و به‌طور کلی معرفی منابع آموزشی معتبر حوزه بیت‌کوین، اقتصاد و حریم خصوصی">
+  <meta property="twitter:creator" content="bitcoind_me">
+  <meta property="twitter:image:src" content="https://bitcoind.me/assets/images/bitcoind_me_library_dark.png">
+  <meta property="twitter:domain" content="bitcoind.me">
+  <link href="../css/bootstrap-4.6.min.css" rel="stylesheet">
+  <link href="../css/hamburgermenu-vertical.css" rel="stylesheet">
+
+  <style>
+    body{
+      background-color: #272838;
+      color:#f0f0f0;
+      direction: rtl;
+    }
+    @font-face {
+        font-family: 'IranSans';
+        src: url("../assets/fonts/IRANSansWeb.woff") format("woff");
+        font-weight: normal; 
+    } 
+    @font-face {
+        font-family: 'IranSans-bold';
+        src: url("../assets/fonts/IRANSansWeb_Bold.woff") format("woff");
+        font-weight: bold; 
+    }
+    /* latin */
+    @font-face {
+      font-family: 'Baloo Bhaina 2';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(../assets/fonts/qWcwB6yyq4P9Adr3RtoX1q6ySiQjtiEnm4c.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }    
+    .ir_title{
+        font-family: IranSans;
+        font-size:1em;
+    }
+    .ir_title_bold{
+        font-family: IranSans-bold;
+        font-size:1.1em;
+    }
+
+    a:link{
+      color:#007bff;
+      text-decoration: none;
+    }
+    a:hover{
+      color:#007bff;
+      text-decoration: none;
+    }
+    a:active{
+      color:#007bff;
+      text-decoration: none;
+    }    
+    a:visited{
+      color:#007bff;
+      text-decoration: none;
+    }
+
+    .row_downloadLink > a:link{
+      color:#fff;
+      text-decoration: none;
+    }
+    .row_downloadLink > a:hover{
+      color:#fff;
+      text-decoration: none;
+    }
+    .row_downloadLink > a:active{
+      color:#fff;
+      text-decoration: none;
+    }    
+    .row_downloadLink > a:visited{
+      color:#fff;
+      text-decoration: none;
+    }
+
+    .row_downloadLink_dark > a:link{
+      color: #272838;
+      text-decoration: none;
+    }
+    .row_downloadLink_dark > a:hover{
+      color: #272838;
+      text-decoration: none;
+    }
+    .row_downloadLink_dark > a:active{
+      color: #272838;
+      text-decoration: none;
+    }    
+    .row_downloadLink_dark > a:visited{
+      color: #272838;
+      text-decoration: none;
+    }
+
+    .row_gotoLink > a:link{
+      color:#fff;
+      text-align: right;
+      text-decoration: none;
+    }
+    .row_gotoLink > a:hover{
+      color:#fff;
+      text-align: right;
+      text-decoration: none;
+    }
+    .row_gotoLink > a:active{
+      color:#fff;
+      text-align: right;
+      text-decoration: none;
+    }    
+    .row_gotoLink > a:visited{
+      color:#fff;
+      text-align: right;
+      text-decoration: none;
+    }
+
+    .row_itemDesc > a:link{
+      color:#6aaff9;
+      text-decoration: none;
+    }
+    .row_itemDesc > a:hover{
+      color:#6aaff9;
+      text-decoration: none;
+    }
+    .row_itemDesc > a:active{
+      color:#6aaff9;
+      text-decoration: none;
+    }    
+    .row_itemDesc > a:visited{
+      color:#6aaff9;
+      text-decoration: none;
+    }
+
+    .email_style{
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      color: #666;
+    }
+
+    .section_header{
+      color:#F3DE8A;
+      text-align: right;
+      font-family: IranSans-bold;
+      font-size:1.2em;
+    }
+    .row_itemTitle{
+      color:#fff;
+      text-align: right;
+      font-family: IranSans;
+      font-size:1em;
+    }
+    .row_itemDesc{
+      margin-top:3px;
+      text-align: right;
+      font-family: IranSans;
+      font-size:.85em;      
+    }
+    .row_downloadLink{
+      margin-top:3px;
+      text-align: left;
+      font-family: IranSans;
+      font-size:.9em;  
+    }
+    .row_abstract{
+      font-family: IranSans;
+      font-size:.9em;      
+      text-align: justify;
+      color:rgb(140, 140, 140);
+      border-bottom:solid 1px #45464a;
+      padding-bottom: 7px;
+    }
+
+    .row_abstract_noborder{
+      font-family: IranSans;
+      font-size:.9em;
+      text-align: justify;
+      color:rgb(140, 140, 140);
+      padding-bottom: 7px;
+    }
+
+    .row_itemTitle_ziya{
+      color:rgb(44, 22, 22);
+      text-align: right;
+      font-family: IranSans;
+      font-size:1em;
+    }   
+
+    .download-icon{
+      height:20px;
+      opacity:.7;
+    }
+
+    .row_itemTitle_dark {
+      color: #f0f0f0;
+      text-align: right;
+      font-family: IranSans;
+      font-size: 1em;
+      font-weight: bold;
+    }
+
+    .row_itemTitle_dark>a:link {
+      color: #f0f0f0;
+      text-decoration: none;
+    }
+
+    .row_itemTitle_dark>a:hover {
+      color: #f0f0f0;
+      text-decoration: none;
+    }
+
+    .row_itemTitle_dark>a:active {
+      color: #f0f0f0;
+      text-decoration: none;
+    }
+
+    .row_itemTitle_dark>a:visited {
+      color: #f0f0f0;
+      text-decoration: none;
+    }
+
+    .blex-nav-wrapper {
+      left: 0;
+      right: 0;
+      top:0;
+      position: fixed;
+      background-color: #272838;
+      box-shadow: #1b1b1b 0 0 20px;
+      z-index: 5;
+    }
+    .hamburgermenuitem a{
+      font-family:IranSans-bold;
+      font-size:1.4em;
+      color:#f4f4f4;
+      text-decoration: none;
+    }
+    .hamburgermenuitem a:hover{
+      font-family:IranSans-bold;
+      font-size:1.4em;
+      color:#f4f4f4;
+      text-decoration: none;
+    }
+
+    video {
+        /* override other styles to make responsive */
+        width: 100%    !important;
+        height: auto   !important;
+    }
+  </style>
+
+  <!-- Matomo -->
+  <script type="text/javascript">
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      // var u="https://stats.bitcoind.me/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+</head>
+<body>
+
+  <nav role="navigation">
+    <div class="blex-nav-wrapper pb-1">
+      <div class="row">
+        <div class="col text-left"
+          style="font-family: 'Baloo Bhaina 2', cursive;font-size:150%;padding-top:.8em;padding-bottom:.3em;padding-left:1.5em;">
+          <div style="font-family: 'Baloo Bhaina 2', cursive;cursor: pointer;">
+            <a href="https://bitcoind.me" style="text-decoration: none;">
+              <span style="color:#ffa233;">bitcoind</span><span style="color:#fff;">.me</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <ul class="navbar" id="navbar">
+    <li class="hamburgermenuitem" style="width:300px;">
+      <div class="row">
+        <div class="col-3 text-right"><a href="https://bitcoind.me"><img src="../assets/images/house-building.png"
+              style="height:45px;vertical-align: middle;"></a></div>
+        <div class="col-9 pt-2 text-right"><a href="https://bitcoind.me">صفحۀ اصلی</a></div>
+      </div>
+    </li>
+    <li class="hamburgermenuitem" style="width:300px;">
+      <div class="row">
+        <div class="col-3 text-right"><a href="https://farhang.bitcoind.me"><img src="../assets/images/open-book_1f4d6.png"
+              style="height:45px;"></a></div>
+        <div class="col-9 pt-2 text-right"><a href="https://farhang.bitcoind.me">فرهنگ بیت‌کوین</a></div>
+      </div>
+    </li>
+    <li class="hamburgermenuitem" style="width:300px;">
+      <div class="row">
+        <div class="col-3 text-right"><a href="https://anchor.fm/bitcoind-me"><img
+              src="../assets/images/studio-microphone.png" style="height:45px;"></a></div>
+        <div class="col-9 pt-2 text-right"><a href="https://anchor.fm/bitcoind-me">پادکست</a></div>
+      </div>
+    </li>
+    <li class="hamburgermenuitem" style="width:300px;">
+      <div class="row">
+        <div class="col-3 text-right"><a href="https://calc.bitcoind.me"><img
+              src="../assets/images/old-school-calculator.png" style="height:45px;"></a></div>
+        <div class="col-9 pt-2 text-right"><a href="https://calc.bitcoind.me">ماشین‌حساب بیت‌کوین</a></div>
+      </div>
+    </li>
+    <a class="close" href="#">
+      <img src="../assets/images/ham-close.svg" alt="close">
+    </a>
+  </ul>
+  <a class="hamburger" href="#navbar">
+    <img src="../assets/images/ham-light.png" alt="menu">
+  </a>
+
+  <div style="background-color:#222222;color:#f0f0f0;padding-top:30px;padding-bottom:85px;margin-top:60px;">
+    <div class="container text-center ir_title" style="width: 100%; font-size:1.3em;">
+      
+        
+        
+        <video style="max-width: 100%;height: auto;max-height: 500px;" poster="../assets/images/videothumbs/cypherpunkswritecode.png" controls>
+            <source src="https://archive.org/download/cypherpunks-write-code-reason-farsi-dubbed-SD/cypherpunks-write-code-reason-farsi-dubbed-SD.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+
+        <div class="row text-center">
+        <div class="col-10 pt-4 text-right" style="font-weight: bold;">
+          <div style="font-weight: bold;font-size: 1em;">سایفرپانک‌ها کُد می‌نویسند</div>
+
+        </div>
+        <div class="col-2 text-left" style="font-size: .9em;">
+          <img src="../assets/images/books.png" style="height:20px;visibility: hidden;">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-right">
+            <div class="pt-3" style="font-size:.7em;color:#e9e9e9;">
+                <p>
+                    در اوایل دهه‌ی ۹۰ میلادی، گروهی از ریاضی‌دانان، هکرها، و افراد علاقه‌مند به تکنولوژی که به اسم «سایفرپانک‌ها» شناخته می‌شدند به این باور مشترک رسیده بودند که اینترنت یا دیوارهای ساختگی موجود بین مردم جهان رو پایین می‌کشه یا شرایط رو برای ظهور دولت‌های مستبد شبیه به داستن جورج اورول فراهم می‌کنه. اون‌ها به شاخه‌ای از علم ریاضی به نام رمزنگاری به چشم سلاحی برای مقابله با برنامه‌ریزی مرکزی و پایش اطلاعات در این جهانِ مجازیِ نوپا نگاه می‌کردند.
+                </p>
+                <p>
+                    ایده های فلسفی و فنی مطرح شده در گروه ایمیل پرخواننده سایفرپانک ها، که در سال ۱۹۹۲ راه اندازی شد، بر ایجاد بیت کوین، ویکی لیکس، تور، بیت تورنت و جاده ابریشم تأثیر گذاشت. سایفرپانک‌ها زمانی که اینترنت بر جهان چیره می‌شد، هم خوبی‌ها و هم بدی‌های اون رو در نظر داشتند.از بدی‌ها می‌توان به تهدیدات آن برای حریم خصوصی افراد و از خوبی‌های آن به امکان ساخت پلتفرم‌های مجازی غیرقابل نفوذ از جانب تنظیم‌گران دولتی، برای ایجاد ارتباط و معامله افراد اشاره کرد.
+                </p>
+            </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  </div>
+
+  <div class="py-5" style="background-color:#272838;border-top:solid 1px #666;">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-xl-4 text-center py-1">
+          <a href="https://farhang.bitcoind.me">
+            <img src="../assets/images/farhang_share.png" style="width: 340px;border:solid 2px #f0f0f0;">
+          </a>
+        </div>
+        <div class="col-xl-4 text-center py-1">
+            <a href="library.html">
+                <img src="../assets/images/bitcoind_me_library_white.png" style="width: 340px;">
+            </a>
+        </div>
+        <div class="col-xl-4 text-center py-1">
+          <img src="../assets/images/bitcoindme_pod_white.png" style="width: 340px;" usemap="#bitcoindmepod">
+          <map name="bitcoindmepod">
+            <area shape="rect" coords="175,110,320,170" href="podcast://anchor.fm/s/6a28fc34/podcast/rss" alt="Apple Podcast" target="_blank" />
+            <area shape="rect" coords="20,110,160,170" href="feed://anchor.fm/s/6a28fc34/podcast/rss" alt="Podcast feed" target="_blank" />
+            <area shape="rect" coords="0,0,340,100" href="https://anchor.fm/bitcoind-me" alt="Podcast Page" target="_blank" />
+          </map>
+        </div>
+        <!-- <div class="col-xl-4 text-center py-1">
+          <a href="https://www.youtube.com/c/bitcoinfordevs">
+            <img src="assets/images/bitcoind_me_fordevs_white.png" style="width: 340px;">
+          </a>
+        </div> -->
+      </div>
+      <div class="row mt-2" style="display:none;">
+        <div class="col-xl-4 text-center py-1">
+          <a href="hemayat.html">
+            <img src="../assets/images/bitcoindme_hemayat_white.png" style="width: 340px;">
+          </a>
+        </div>
+        <div class="col-xl-4 text-center py-1">
+            <img src="../assets/images/bitcoindme_pod_white.png" style="width: 340px;" usemap="#bitcoindmepod">
+            <map name="bitcoindmepod">
+              <area shape="rect" coords="175,110,320,170" href="podcast://anchor.fm/s/6a28fc34/podcast/rss" alt="Apple Podcast" target="_blank" />
+              <area shape="rect" coords="20,110,160,170" href="feed://anchor.fm/s/6a28fc34/podcast/rss" alt="Podcast feed" target="_blank" />
+              <area shape="rect" coords="0,0,340,100" href="https://anchor.fm/bitcoind-me" alt="Podcast Page" target="_blank" />
+            </map>
+        </div>
+        <div class="col-xl-4 text-center py-1">
+          <img src="../assets/images/bitcoindme_rhpod_white.png" style="width: 340px;" usemap="#rhpod">
+          <map name="rhpod">
+            <area shape="rect" coords="175,110,320,170" href="podcast://anchor.fm/s/65c384ac/podcast/rss" alt="Apple Podcast" target="_blank" />
+            <area shape="rect" coords="20,110,160,170" href="feed://rss.castbox.fm/everest/6465750e45b44be78231fdf66f41a7f8.xml" alt="Podcast feed" target="_blank" />
+            <area shape="rect" coords="0,0,340,100" href="https://anchor.fm/RHJ" alt="Podcast Page" target="_blank" />
+          </map>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-5" style="background-color:#f0f0f0;color:#272838;">
+    <div class="container" style="width: 65%;">
+      <div class="row">
+        <div class="col-11 ir_title" style="text-align: right;">
+          وب‌سایت منابع فارسی بیت‌کوین پروژه‌ای اپن‌سورس برای نشر محتوای فارسی در حوزه بیت‌کوین، حریم خصوصی، و اقتصاد عمومی است. این مطالب برای استفاده عموم فارسی زبانان سراسر دنیا، و به‌صورت آزاد و رایگان بر روی سایت قرار گرفته‌اند.
+          برای اطلاع از شرایط اضافه‌شدن مطالب به سایت از طریق ایمیل 
+          <span class="email_style">bitcoind_me(-at-) protonmail.com</span> 
+          با ما در تماس باشید.
+        </div>
+        <div class="col-1 text-right"><a href="https://github.com/bitcoind-me/bitcoind-me"><img src="../assets/images/github-512.png" style="height:45px;"></a></div>
+      </div>
+      <div class="row my-3">
+        <div class="col-11 ir_title" style="text-align: right;font-size: .9em;">
+          این سایت برای شمارش آمار بازدیدکنندگان از یک سرویس اختصاصی استفاده می‌کند که داده‌ها در آن به‌صورت ناشناس ثبت می‌شوند و همچنین به تنظیمات مرورگر شما در خصوص حریم‌خصوصی احترام می‌گذارد.
+          <br/>
+        </div>
+        <div class="col-1 text-right">&nbsp;</div>
+      </div>      
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
